@@ -1,0 +1,3 @@
+Comprar comida - Inicio: 4 tarde - Fin: 6 tarde - Lugar: Mercadona
+Devolver ratón - Inicio: 6.30 tarde - Fin: 7 tarde - Lugar: Mediamarkt
+Salir a correr - Inicio: 8 tarde - Fin: 9 tarde - Lugar: Avenida Principal
