@@ -1,0 +1,3 @@
+ALUMNE:(nia,dni,nom,cognoms,data_naixement)
+CP: nia
+C.Alt.: dni
