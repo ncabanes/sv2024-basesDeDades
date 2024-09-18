@@ -1,0 +1,2 @@
+SÈRIES(codi,títol,any,temàtica,temporades)
+CP: codi
