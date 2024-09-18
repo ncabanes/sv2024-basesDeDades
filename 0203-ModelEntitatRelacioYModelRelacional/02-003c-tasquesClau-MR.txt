@@ -1,0 +1,3 @@
+TASCA(codi, nom, prioritat, duració)
+CP: codi
+
