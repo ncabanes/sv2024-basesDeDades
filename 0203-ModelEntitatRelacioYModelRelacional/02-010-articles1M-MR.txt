@@ -1,0 +1,6 @@
+CATEGORIA(codi,nom)
+C.P.: codi
+
+ARTICLE(codi,nom,preu,codiCategoria)
+C.P.: codi
+C.Ext.: codiCategoria
