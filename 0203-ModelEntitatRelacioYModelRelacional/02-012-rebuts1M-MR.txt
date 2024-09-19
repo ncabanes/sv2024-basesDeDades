@@ -1,0 +1,6 @@
+CLIENT(codi,nom)
+C.P.:codi
+
+REBUT(codi,nom,import,codiClient)
+C.P.:codi
+C.Ali.: codiClient -> CLIENT(codi)
