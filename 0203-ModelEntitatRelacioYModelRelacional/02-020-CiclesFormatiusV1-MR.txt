@@ -1,0 +1,10 @@
+ALUMNE(nia,nom,email)
+PK:nia
+
+MODUL(codi,nom,prerequisits)
+PK:codi
+
+CURSA(niaAlumne,codiModul)
+PK:(niaAlumne,codiModul)
+FK:niaAlumne -> ALUMNE(nia)
+FK:codiModul -> MODUL(codi)
