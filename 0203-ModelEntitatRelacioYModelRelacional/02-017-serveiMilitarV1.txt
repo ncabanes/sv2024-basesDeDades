@@ -1,0 +1,14 @@
+COMPANIA(numero,actividad)
+PK:numero
+
+CUARTEL(numero,nombre,dirección)
+PK:numero
+
+CUERPO(numero,denominacion)
+PK:numero
+
+SOLDADO(numero,nombre,apellidos,grado,numeroCOMPANIA,numeroCUARTEL,numeroCUERPO)
+PK:numero
+FK:numeroCOMPANIA -> COMPANIA(numero)
+FK:numeroCUARTEL -> CUARTEL(numero)
+FK:numeroCUERPO	-> CUERPO(numero)
