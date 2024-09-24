@@ -1,0 +1,10 @@
+PROPIETARI(dni, nom, domicili, punts)
+C.P.: dni
+
+CATEGORIA( codi, nom, descripcio)
+C.P.: codi
+
+VEHICLE(matricula, marca, model, eco, dniPropietari, codiCategoria)
+C.P.: matricula
+C.Ex.: dniPropietari --> PROPIETARI(dni)
+C.Ex.: codiCategoria --> CATEGORIA(codi)
