@@ -1,0 +1,13 @@
+CAP (dni, nom, cognoms, dataNaixement)
+C.P.: dni
+
+DEPARTAMENT( nom, ubicació, dniCap)
+C.P.: nom
+C.Ali.: dniCap --> CAP (dni)
+
+EMPLEAT (dni, nom, cognoms, dataNaixement, nomDepartament)
+C.P.: dni
+C.Ali.: nomDepartament --> DEPARTAMENT(nom)
+
+
+
