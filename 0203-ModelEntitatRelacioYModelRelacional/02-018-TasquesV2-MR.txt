@@ -1,0 +1,7 @@
+CATEGORIA(codi,nom,color)
+C.P.: codi
+
+TASCA(número,nom,prioritat,duració,codiCategoria)
+C.P.: número
+C.EX.: codiCategoria --> CATEGORIA(codi)
+
