@@ -1,0 +1,14 @@
+COMPONENT(codi,nom)
+CP: codi
+
+CATEGORIA(codi,nom)
+CP: codi
+
+ARTICLE(codi,nom,codiCategoria)
+CP: codi
+CAli: codiCategoria -> CATEGORIA(codi)
+
+ES_PART_DE(codiComponent,codiArticle, quantitat)
+CP: (codiComponent,codiCaegoria)
+CAli: codiComponent -> COMPONENT(codi)
+CAli: codiArticle -> ARTICLE(codi)
