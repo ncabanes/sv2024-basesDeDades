@@ -1,0 +1,14 @@
+ESTUDIANT(nia, nom)
+PK: nia
+
+CURS(codi, nom, prerrequisits)
+PK: codi
+
+ASSIGNATURA (codi, nom)
+PK: codi
+FK: codiCurs --> CURS(codi)
+
+ES_MATRICULA_DE (niaEstudiant, codiAssignatura)
+PK: (niaEstudiant, codiAssignatura)
+FK: niaEstudiant --> ESTUDIANT(nia)
+FK: codiAssignatura --> ASSIGNATURA(codi)
