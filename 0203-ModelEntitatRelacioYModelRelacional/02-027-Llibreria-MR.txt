@@ -1,0 +1,13 @@
+EDITORIAL(codi,nom)
+C.P.:codi
+
+AUTOR(codi,nom)
+C.P.:codi
+
+LLIBRE(isbn,títol,codiEditorial)
+C.P.:isbn
+C.EX.:codiEditorial --> EDITORIAL(codi)
+
+ESCRIT_PER(isbnLlibre,codiAutor)
+C.EX.:isbnLlibre --> LLIBRE(isbn)
+C.EX.:codiAutor --> AUTOR(codi)
