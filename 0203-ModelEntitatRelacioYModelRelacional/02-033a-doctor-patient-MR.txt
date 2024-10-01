@@ -1,0 +1,19 @@
+DOCTOR(id,firstName,lastName)
+C.P: id
+
+PATIENT(id,firstName,lastName, insuranceNumber)
+C.P: id
+
+SPECIALIZATION(id,description,idDoctor)
+C.P: codi
+C.Ali: idDoctor --> DOCTOR(id)
+
+DIAGNOSE(code,details,IDpatient)
+C.P: code
+C.Ali: idPatient --> PATIENT(id)
+VNN: idPatient
+
+HAS(idPatient,idDoctor)
+C.P: idPatient,idDoctor
+C.Ali: idPatient --> PATIENT(id)
+C.Ali: idDoctor --> DOCTOR(id)
