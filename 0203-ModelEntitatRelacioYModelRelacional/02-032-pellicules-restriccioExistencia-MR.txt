@@ -1,0 +1,15 @@
+DIRECTOR(codi,nom)
+C.P: codi
+
+PELLICULA(codi,titol,valoracio,resum,codiDirector)
+C.P: codi
+C.Ali: codiDirector -> DIRECTOR(codi)
+V.N.N: codiDirector
+
+ACTOR(codi,nom)
+C.P: codi
+
+ACTUA(codiActor,codiPellicula, personatge)
+C.P: codiActor,codiPellicula
+C.Ali: codiActor -> ACTOR(codi)
+C.Ali: codiPellicula -> PELLICULA(codi)
