@@ -1,0 +1,5 @@
+Metges (d'una certa especialitat, que és obligatori indicar) que atenen pacients.
+
+De cada metge ens interessa, a més del nom, els seus cognoms i el seu número de col·legiat. De cada pacient voldrem el nom, els cognoms, el DNI i el seu número d'assegurat (si existix). Per a cada especialitat, un codi i una descripció.
+
+Quan un pacient és atés, ens interessarà saber la data, el motiu (un text) i el diagnòstic (un altre text).
