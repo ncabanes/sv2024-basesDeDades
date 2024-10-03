@@ -1,0 +1,15 @@
+ESPORT (codi, nomBreu, nomDetallat)
+PK: codi
+
+CATEGORIA (codi, nom, observacions)
+PK: codi
+
+USUARI (dni, nom, cognoms, telèfon, codiCategoria)
+PK: dni
+FK: codiCategoria --> CATEGORIA (codi)
+VNN: codiCategoria
+
+ES_POT_APUNTAR (dniUsuari, codiEsport)
+PK: (dniUsuari, codiEsport)
+FK: dniUsuari --> USUARI (dni)
+FK: codiEsport --> ESPORT (codi)
