@@ -1,0 +1,6 @@
+PAIS(nom,superfície)
+C.P: nom
+
+CIUTAT(nomPais,nom,habitants)
+C.P:(nomPais,nom)
+C.Ali: nomPais -> PAIS(nom)

@@ -1,0 +1,5 @@
+Suposarem que els noms de les ciutats no es repeteixen dins d'un cert país, i podem usar el nom de cada ciutat com a clau primària.
+
+Però si guardem dades de més d'un país, sí que pot repetir-se una ciutat.
+
+Crea un sistema que permeta anotar dades de països i ciutats que hi ha en ells, usant una restricció d'identificador. (EER+MR)
