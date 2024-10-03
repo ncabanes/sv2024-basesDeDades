@@ -1,0 +1,13 @@
+Vern Stratton es un horticultor que está en el negocio de las frutas desde hace cincuenta años. Antes que él, su padre y su abuelo fueron dueños de sus huertos y previeron que al menos uno de los nietos lo heredaría. Ellos tienen excelentes registros de datos desde el siglo XIX que podrían constituir la base para un comprensivo sistema de información. Vern está ahora interesado en las respuestas a preguntas como: 
+
+  * ¿Cuántas variedades de melocotones tenemos en el huerto Springtown? 
+
+  * ¿Cuántos árboles murieron como promedio cada año en el huerto Lee's Valley? 
+
+  * ¿Cuál es el promedio de edad de mis manzanos? 
+
+  * ¿De cuántos árboles de ciruelo tengo más de una variedad?
+
+
+
+(Universidad de Chile)

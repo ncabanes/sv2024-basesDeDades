@@ -1,0 +1,20 @@
+HUERTO(código, nombre)
+CP: código
+
+ESPECIE(código, nombre)
+CP: código
+
+VARIEDAD(código, nombre, codigoEspecie)
+CP: código
+CF: codigoEspecie -> ESPECIE
+VNN: codigoEspecie
+
+ARBOL(código, añoPlantado, añoMuerte, codigoHuerto)
+CP: código
+CF: codigoHuerto -> HUERTO
+VNN: codigoHuerto
+
+PERTENECE_A(códigoArbol, códigoVariedad)
+CP: (códigoArbol, códigoVariedad)
+CF: códigoArbol -> ARBOL
+CF: códigoVariedad -> VARIEDAD
