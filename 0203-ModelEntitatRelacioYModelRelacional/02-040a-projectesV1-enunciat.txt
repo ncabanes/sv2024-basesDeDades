@@ -1,0 +1,31 @@
+Projectes (V1)
+
+- En un projecte poden treballar molts empleats i un empleat pot estar 
+ocupat en més d'un projecte.
+- A més, cada projecte pot afectar diverses localitats (i en una localitat es poden estar duent a terme diversos projectes).
+- Per a cada localitat estem interessats en el número d'habitants i la 
+província a la qual pertany.
+- Cada empleat pot tindre diverses habilitats (almenys una), i una mateixa habilitat la poden tindre diversos empleats.
+- Cada habilitat té un número associat i necessitem una breu descripció 
+d'ella.
+- Cada projecte pertany a una única categoria (però diversos projectes poden ser de la mateixa categoria). De cada categoria ens interessa un codi i una descripció.
+- Finalment, per a cada projecte necessitem el cost estimat
+
+Universidad de Castilla La Mancha (V1: simplificada)
+
+-----
+
+Proyectos (V1)
+
+- En un proyecto pueden trabajar muchos empleados y un empleado puede estar 
+ocupado en más de un proyecto.
+- Además, cada proyecto puede afectar a varias localidades (y en una localidad se pueden estar llevando a cabo varios proyectos).
+- Para cada localidad estamos interesados en el número de habitantes y la 
+provincia a la que pertenece.
+- Cada empleado puede tener varias habilidades (al menos una), y una misma habilidad la pueden tener varios empleados.
+- Cada habilidad tiene un número asociado y necesitamos una breve descripción 
+de ella.
+- Cada proyecto pertenece a una única categoría (pero varios proyectos pueden ser de la misma categoría). De cada categoría nos interesa un código y una descripción.
+- Por último, para cada proyecto necesitamos el coste estimado
+
+Universidad de Castilla La Mancha (V1: simplificada)
