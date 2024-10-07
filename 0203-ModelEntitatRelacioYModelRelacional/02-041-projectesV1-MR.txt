@@ -1,0 +1,31 @@
+LOCALITAT (cp, nom, habitants, provincia)
+PK: cp
+
+CATEGORIA (codi, descripció)
+PK: codi
+
+PROJECTE (codi, cost, nom, codiCategoria)
+PK: codi
+FK: codiCategoria --> CATEGORIA (codi)
+VNN: codiCategoria
+
+EMPLEAT (dni, nom)
+PK: dni
+
+HABILITAT (codi, descripció)
+PK: codi
+
+LOCALITAT_CONTE_PROJECTE (cpLocalitat, codiProjecte)
+PK: (cpLocalitat, codiProjecte)
+FK: cpLocalitat --> LOCALITAT (cp)
+FK: codiProjecte --> PROJECTE (codi)
+
+PROJECTE_TREBALLA_EMPLEAT (codiProjecte, dniEmpleat)
+PK: (codiProjecte, dniEmpleat)
+FK: codiProjecte --> PROJECTE (codi)
+FK: dniEmpleat --> EMPLEAT (dni)
+
+EMPLEAT_TE_HABILITAT (dniEmpleat, codiHabilitat)
+PK: (dniEmpleat, codiHabilitat)
+FK: dniEmpleat --> EMPLEAT (dni)
+FK: codiHabilitat --> HABILITAT (codi)
