@@ -1,0 +1,11 @@
+DIRECTOR(dni, nom)
+C.P.: dni
+
+PROJECTE(codi, denominació)
+C.P.: codi
+
+DIRIGEIX(dniDirector, codiProjecte)
+C.P.: dniDirector
+C.Alt.: codiProjecte
+C.Ext.: dniDirector -> DIRECTOR
+C.Ext.: codiProjecte -> PROJECTE
