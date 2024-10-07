@@ -1,0 +1,7 @@
+DIRECTOR(dni, nom)
+C.P.: dni
+
+PROJECTE(codi, denominació, dniDirector)
+C.P.: codi
+C.Alt.: dniDirector
+C.Ext.: dniDirector -> DIRECTOR
