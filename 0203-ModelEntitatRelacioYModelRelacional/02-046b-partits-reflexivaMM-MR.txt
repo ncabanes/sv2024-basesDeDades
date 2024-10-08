@@ -1,0 +1,7 @@
+EQUIP (codi, nom)
+CP: codi
+
+PARTIT (codiEquipLocal, codiEquipVisitant, puntsLocal, puntsVisitant)
+CP: (codiEquipLocal, codiEquipVisitant)
+C.AJ: codiEquipLocal -> EQUIP
+C.AJ: codiEquipVisitant -> EQUIP
