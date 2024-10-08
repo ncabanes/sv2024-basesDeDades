@@ -1,0 +1,3 @@
+TREBALLADOR(dni, nom, adreça, telèfon, e-mail, dniCap)
+CP: dni
+CAj: dniCap -> TREBALLADOR
