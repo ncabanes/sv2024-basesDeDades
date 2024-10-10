@@ -1,0 +1,8 @@
+PERSONA(dni,nom)
+PK:dni
+
+CASAT_AMB(dniPersona1, dniPersona2)
+PK:dniPersona1
+UK:dniPersona2
+FK:dniPersona1 -> PERSONA (dni)
+FK:dniPersona2 -> PERSONA (dni)
