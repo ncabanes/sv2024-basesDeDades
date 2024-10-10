@@ -1,0 +1,11 @@
+MUNICIPIO (código, nombre)
+PK: código
+
+VIVIENDA (refCatastral, calle, número, escalera, piso, puerta, códigoMunicipio)
+PK: refCatastral
+FK: códigoMunicipio --> MUNICIPIO (código)
+NN: códigoMunicipio
+
+PERSONA (dni, nombre, apellidos, nacimiento, refCatastralVivienda)
+PK: dni
+FK: refCatastralVivienda --> VIVIENDA (refCatastral)
