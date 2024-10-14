@@ -1,0 +1,3 @@
+Viviendas
+
+Diseñar un modelo E/R que recoja información sobre municipios, viviendas y personas. Cada persona solo puede habitar en una vivienda y residir en un municipio, pero puede ser propietaria de mas de una vivienda. Nos interesa también la relación de las personas con su cabeza de familia.
