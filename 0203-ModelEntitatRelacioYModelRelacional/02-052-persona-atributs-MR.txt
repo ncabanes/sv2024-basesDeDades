@@ -1,0 +1,8 @@
+PERSONA(codi, nom, cognom, carrer, número, porta)
+PK: codi
+VNN: nom
+VNN: cognom
+
+TELEFON(codi_persona, num_telf)
+PK: (codi_persona, num_telf)
+FK: codi_persona -> PERSONA(codi)
