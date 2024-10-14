@@ -1,0 +1,9 @@
+We have been asked to design a database for a subset of the details of a company:
+
+We have to consider the EMPLOYEES (code, surname, salary and age) which take part in PROJECTS (name -unique-, budget and release date). Each project must have at least one employee assigned to it. We want to keep track of the date in which an employee started working in a certain project.
+
+Aso, our EMPLOYEES are members of certain DEPARTMENTS (name, phone) in a certain BRANCH of the company (city and address -number + street + post code). Each department must belong only to one branch (for example, there is only one "marketing" department in "Toronto", even though there may be other departments in Toronto, as well as other branches containing their own marketing department).
+
+Finally, we also want to store information about which employee acts as a manager for a certain department (each department will have one and only one manager).
+
+Extracted from CSC2507, University Of Toronto, 2004.
