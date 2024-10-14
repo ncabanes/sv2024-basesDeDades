@@ -1,0 +1,13 @@
+MUNICIPI(codi, nom)
+C.P.: codi
+
+HABITATGE(codi, descripció, codiPersonaPropietaria)
+C.P.: codi
+C.Aj.: codiPersonaPropietaria -> PERSONA(codi)
+
+PERSONA(cod, nom, codMunicipiResideix, codHabitatge, codPersonaCapFamilia)
+C.P.: codi
+C.Aj.: codMunicipiResideix -> MUNICIPI(codi)
+C.Aj.: codHabitatge -> HABITATGE(codi)
+C.Aj.: codPersonaCapFamilia -> PERSONA(codi)
+
