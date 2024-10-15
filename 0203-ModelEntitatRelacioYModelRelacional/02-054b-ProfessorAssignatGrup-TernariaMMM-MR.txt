@@ -1,0 +1,14 @@
+PROFESSOR (codi, nom)
+CP: codi
+
+GRUP (codi, nom)
+CP: codi
+
+ASSIGNATURA (codi, nom)
+CP: codi
+
+IMPARTIR (codiProf, codiGrup, codiAssig)
+CP: (codiProf, codiGrup, codiAssig)
+C.Ali.: codiProf -> PROFESSOR
+C.Ali.: codiGrup -> GRUP
+C.Ali.: codiAssig -> ASSIGNATURA
