@@ -1,0 +1,17 @@
+
+DIRECTOR(codi,nom)
+CP:codi
+
+PROJECTE(codi,nom)
+CP:codi
+
+EMPRESA(codi,nom)
+CP:codi
+
+COORDINA(codiDir,codiPro,codiEmp)
+CP:(codiDir,codiPro)
+C.Alt.:(codiDir,codiEmp)
+C.Alt.:(codiEmp,codiPro)
+FK:codiDir-->DIRECTOR(codi)
+FK:codiPro-->PROJECTE(codi)
+FK:codiEmp-->EMPRESA(codi)

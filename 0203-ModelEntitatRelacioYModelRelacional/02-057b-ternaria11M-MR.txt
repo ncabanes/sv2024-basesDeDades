@@ -1,0 +1,15 @@
+PROFESSOR(dni,nom)
+CP:dni
+
+GRUP(codi, aula)
+CP:codi
+
+ASSIGNATURA(codi,denominacio)
+CP:codi
+
+IMPARTIR(codiGrup,codiAssig,dniProfessor)
+CP: (codiGrup,codiAssig)
+CAlt: (codiGrup,dniProfessor)
+CF: dniProfessor --> PROFESSOR(dni)
+CF: codiGrup --> GRUP(codi)
+CF: codiAssig --> ASSIGNATURA(codi)
