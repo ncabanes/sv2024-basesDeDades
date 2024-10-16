@@ -1,0 +1,15 @@
+VENEDOR(codi, nom)
+PK: codi
+
+COTXE(numBastidor, model, marca, preu)
+PK: numBastidor
+
+CLIENT(dni, nom, calle, num)
+PK: dni
+
+VENDRE(codiVenedor, numBastidorCotxe, dniClient, dataVenta)
+PK: (dniClient, numBastidorCotxe)
+UK: (codiVenedor, numBastidorCotxe)
+FK: dniClient -> CLIENT
+FK: codiVenedor -> VENEDOR
+FK: numBastidorCotxe -> COTXE
