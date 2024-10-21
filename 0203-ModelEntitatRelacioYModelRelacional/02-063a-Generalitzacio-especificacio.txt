@@ -1,0 +1,4 @@
+Volem guardar una certa informació bàsica sobre estudiants d'un centre d'FP.
+De cada estudiant voldrem saber el nom, adreça, telèfon i data de naixement.
+En el cas concret dels d'informàtica, ens interessarà un apartat de "altres coneixements", de text.
+Per als d'administratiu, anotarem les pulsacions per minut que aconsegueixen mecanografiant textos.

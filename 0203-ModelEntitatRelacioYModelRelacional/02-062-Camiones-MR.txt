@@ -1,0 +1,25 @@
+TIENDA (nombre, dirección, teléfono)
+PK: nombre
+
+ALMACÉN (nombre, dirección, teléfono)
+PK: nombre
+
+CAMIÓN (matrícula, vol.máx, pes.máx)
+PK: matrícula
+
+VIAJE (número, matrículaCamión)
+PK: número
+NN: matrículaCamión
+FK: matrículaCamión --> CAMIÓN (matrícula)
+
+PEDIDO (número, peso, volumen, númeroViaje, nombreTienda)
+PK: número
+NN: númeroViaje
+NN: nombreTienda
+FK: númeroViaje --> VIAJE (número)
+FK: nombreTienda --> TIENDA (nombre)
+
+ES_RECOGIDO (númeroPedido, nombreAlmacén)
+PK: (númeroPedido, nombreAlmacén)
+FK: númeroPedido --> PEDIDO (número)
+FK: nombreAlmacén --> ALMACÉN (nombre)

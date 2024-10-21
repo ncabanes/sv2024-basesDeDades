@@ -1,0 +1,15 @@
+La compañía de transportes CAMIONES recoge pedidos de los almacenes de la cadena VELÁZQUEZ Hnos. y las entrega a las tiendas de la misma cadena. De momento hay 6 almacenes y 45 tiendas. Cada tienda tiene su propio nombre, y conocemos también su dirección y teléfono. Cada almacén tiene un número diferente además de la dirección y teléfono. Un camión puede transportar varios pedidos en el mismo viaje y entregar cada pedido a la tienda que lo solicitó. Cada viaje se identifica por un número. Cada pedido se identifica por un número e incluye datos sobre peso, volumen y tienda de destino. Cada camión tiene el número de matrícula y su propio límite máximo de volumen y peso transportado. La flota de la compañía CAMIONES consta de 150 vehículos y cada uno realiza entre 3 y 4 viajes semanales.
+
+Deseamos contar con una BD para uso común entre las dos empresas, que sirva para:
+
+– Controlar el uso de los camiones (fechas).
+
+– Controlar las entregas (pedidos entregados)
+
+– Que ayude a programar los viajes (conocer los pedidos hechos, de qué almacén a qué tiendas y los viajes asignados a camiones)
+
+Suposiciones:
+• Un pedido se toma completo de un almacén y se entrega también completo a una sola tienda.
+• En un viaje interviene solo un camión, toma varios pedidos de un almacén y los entrega a una o varias tiendas.
+
+(Universidad de La Rioja, 2005)

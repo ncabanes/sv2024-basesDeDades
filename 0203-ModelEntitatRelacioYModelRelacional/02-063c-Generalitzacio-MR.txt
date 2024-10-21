@@ -1,0 +1,10 @@
+ESTUDIANT (dni, nom, data.naixement, adressa, telèfon)
+PK: dni
+
+INFORMÀTICA (dniEstudiant, altres.coneixements)
+PK: dniEstudiant
+FK: dniEstudiant --> ESTUDIANT (dni)
+
+ADMINISTRATIU (dniEstudiant, ppm)
+PK: dniEstudiant
+FK: dniEstudiant --> ESTUDIANT (dni)
