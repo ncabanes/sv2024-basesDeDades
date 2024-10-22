@@ -1,0 +1,41 @@
+Catálogo de un portal web.
+
+Se desea incorporar un catálogo a un portal web y como primer paso, en este
+ejercicio se va a obtener el esquema conceptual de la base de datos que le dará
+soporte.
+
+El catálogo se va a organizar como una lista jerárquica de temas. Cada tema
+final de la jerarquía tendrá un conjunto de enlaces a páginas web recomendadas.
+Por ejemplo, un tema podría ser PostgreSQL. Dentro de la jerarquía, éste
+podría ser un subtema (hijo) del tema Sistemas de gestión de bases de
+datos. El tema MySQL podría ser otro subtema de este último.
+De cada tema final hay varias páginas web recomendadas. En el tema
+PostgreSQL una página podría ser www.postgresql.org y otra página podría ser 
+la web donde están colgados estos apuntes. De cada página se guarda
+la URL y el título.
+
+Para cada página se almacena una prioridad en cada tema en que se recomienda.
+Esta prioridad sirve para ordenarlas al mostrar los resultados de las
+búsquedas en el catálogo de temas. Por ejemplo, la página www.postgresql.org
+tendría una prioridad mayor que la de los apuntes que tienes en tus manos.
+Cada tema tiene una serie de palabras clave asociadas, cada una con un
+número que permite ordenarlas según su importancia dentro del tema. Por
+ejemplo, el tema PostgreSQL podría tener las palabras clave (1) relacional,
+(2) multiusuario y (3) libre.
+
+También se quiere guardar información sobre las consultas que se han realizado
+sobre cada tema del catálogo. Cada vez que se consulte un tema se
+guardará la IP de la máquina desde la que se ha accedido y la fecha y hora de
+la consulta.
+
+Algunas páginas web son evaluadas por voluntarios. La calificación que
+otorgan es: **** , ***, ** o *. Se debe almacenar información sobre los voluntarios 
+(nombre y correo electrónico) y las evaluaciones que han hecho de
+cada página (calificación y fecha en que se ha valorado). Una misma página
+puede ser evaluada por distintos voluntarios y, ya que las páginas van cambiando 
+su estructura y contenidos, pueden ser valoradas en más de una ocasión
+por un mismo voluntario. En el caso de repetir una evaluación de una misma
+página por un mismo voluntario, sólo interesa almacenar la última evaluación
+realizada (la más reciente).
+
+Bases de datos - Universidad Jaume I
