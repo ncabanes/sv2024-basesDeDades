@@ -1,0 +1,5 @@
+Tenim un club hípic, amb cavalls i amb monitors que imparteixen classes / sessions a una sèrie d'alumnes, ja siga emprant els cavalls propis del club o cavalls pertanyents als alumnes. També està la possibilitat que un alumne concerte una sessió, sense professor, en la qual vindre a practicar amb el seu propi cavall.
+
+---
+
+Tenemos un club hípico, con caballos y con monitores que imparten clases / sesiones a una serie de alumnos, ya sea empleando los caballos propios del club o caballos pertenecientes a los alumnos. También está la posibilidad de que un alumno concierte una sesión, sin profesor, en la que venir a practicar con su propio caballo.
