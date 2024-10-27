@@ -1,0 +1,25 @@
+Exercici 2.67: Purchase order (EER)
+
+ ---
+
+a) A supplier (Supp-#) processes many purchase orders (PO-#) and sells a number of products (Prod-#). A product is sold by only one supplier.
+b) Each of the purchase orders that a supplier may process includes several products. The relationship between order and product is defined as "Line Item".
+c) A customer (Cust-#) may place one or more purchase orders. A purchase order may be placed by only one customer.
+
+ ---
+
+Versió en valencià (enriquida):
+
+Els clients (dni, nom, email) poden realitzar comandes. Per a cada comanda ens interessa un número correlatiu i la data en què es realitza. A més, cada comanda pot estar formada per diversos productes (codi, nom, preu de venda, preu de compra), i un producte pot aparéixer en diferents comandes. D'altra banda, els productes són subministrats per proveïdors (cada producte només ens els proporciona un únic proveïdor, però un proveïdor ens pot subministrar diferents productes). També es desitja mantindre la informació sobre quin proveïdor (nif, denominació, ciutat) processarà cada comanda (una comanda és per a un únic proveïdor).
+
+ ---
+
+Versión en castellano (enriquecida):
+
+ Los clientes (dni, nombre, email) pueden realizar pedidos. Para cada pedido nos interesa un número correlativo y la fecha en que se realiza. Además, cada pedido puede estar formada por varios productos (código, nombre, precio de venta, precio de compra), y un producto puede aparecer en distintos pedidos. Por otra parte, los productos son suministrados por proveedores (cada producto sólo nos los proporciona un único proveedor, pero un proveedor nos puede suministrar diferentes productos). También se desea mantener la información sobre qué proveedor (nif, denominación, ciudad) va a procesar cada pedido (un pedido es para un único proveedor).
+
+ ---
+
+Wirtschaftsuniversität Wien - Source: [Mitl97]
+
+ https://www.wu.ac.at/erp/webtrainer/erm-webtrainer/exercise/06/
