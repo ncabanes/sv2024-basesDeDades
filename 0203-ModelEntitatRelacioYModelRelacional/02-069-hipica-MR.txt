@@ -1,0 +1,37 @@
+PERSONA(codi, nom, tlf)
+CP: codi
+
+ALUMNE(codiPersona, email)
+CP: codiPersona
+CF: codiPersona -> PERSONA
+
+MONITOR(codiPersona, especialitat)
+CP: codiPersona
+CF: codiPersona -> PERSONA
+
+CAVALL(codi, nom)
+CP: codi
+
+CAVALL_PROPI(codiCavall, codiAlumne)
+CP: codiCavall
+CF: codiCavall -> CAVALL
+CF: codiAlumne -> ALUMNE
+VNN: codiAlumne
+
+CAVALL_CLUB(codiCavall)
+CP: codiCavall
+CF: codiCavall -> CAVALL
+
+PRACTICA(codiCavallPropi, codiAlumne, data, hora)
+CP: (codiCavallPropi, codiAlumne)
+CF: codiCavallPropi -> CAVALL_PROPI
+CF: codiAlumne -> ALUMNE
+
+CLASSE(codiCavall, codiAlumne, codiMonitor, data, hora)
+CP: (codiCavall, codiAlumne, codiMonitor)
+CF: codiCavall -> CAVALL_PROPI
+CF: codiAlumne -> ALUMNE
+CF: codiMonitor -> MONITOR
+
+
+
