@@ -1,0 +1,28 @@
+VOLUNTARIO (email, nombre)
+PK: email
+
+PÁGINA (url, título)
+PK: url
+
+EVALÚA (emailVoluntario, urlPágina, calificación, fecha)
+PK: (emailVoluntario, urlPágina)
+FK: emailVoluntario --> VOLUNTARIO (email)
+FK: urlPágina --> PÁGINA (url)
+
+TEMA (nombre, esPadreDe)
+PK: nombre
+FK: esPadreDe --> TEMA (esPadreDe)
+
+TRATA_DE (urlPágina, nombreTema, prioridad)
+PK: (urlPágina, nombreTema)
+FK: urlPágina --> PÁGINA (url)
+FK: nombreTema --> TEMA (nombre)
+
+PALABRA_CLAVE (nombreTema, palabraClave, importancia)
+PK: (nombreTema, palabraClave)
+FK: nombreTema --> TEMA (nombre)
+
+CONSULTA (fechaHora, IP, nombreTema)
+PK: (fechaHora, IP)
+NN: nombreTema
+FK: nombreTema --> TEMA (nombre)
