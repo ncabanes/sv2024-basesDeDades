@@ -1,0 +1,11 @@
+JUTJAT (codi, nom)
+PK: codi
+
+PERSONA (dni, nom)
+PK: dni
+
+CASARSE_AMB (dniPersona1, dniPersona2, codiJutjat, dataI, dataF)
+PK: (dniPersona1, dniPersona2)
+FK: dniPersona1 --> PERSONA (dni)
+FK: dniPersona2 --> PERSONA (dni)
+FK: codiJutjat --> JUTJAT (codi)

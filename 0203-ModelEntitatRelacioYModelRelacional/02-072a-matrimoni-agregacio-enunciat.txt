@@ -1,0 +1,5 @@
+Matrimoni (agregació)
+
+Volem reflectir el fet que una persona es pot casar amb una altra, i romandre en aqueix estat des d'una data inicial fins a una data final, però és possible que posteriorment es case amb una persona diferent.
+A més d'aqueixa relació també volem portar compte d'aqueix matrimoni tindrà lloc en un cert jutjat.
+Resol-ho com a agregació i converteix a model relacional.
