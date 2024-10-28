@@ -1,0 +1,1 @@
+Prepara una base de dades per a guardar rebuts de diverses línies: una capçalera que tindrà el número (que es reinicia cada any), la data i hora, i diverses línies, numerades d'1 a n, cadascuna amb una descripció, una quantitat i un preu. (EER+MR)

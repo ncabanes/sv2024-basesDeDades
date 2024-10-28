@@ -1,0 +1,8 @@
+CAPÇALERA(any, numero, data_i_hora)
+CP: (any, numero)
+
+LINIA(anyRebut, numeroRebut, numeroLínia, descripcio, quantitat, preu)
+CP: (anyRebut, numeroRebut, numeroLínia)
+C.Al.:anyRebut -> CAPÇALERA(any)
+C.Al.:numeroRebut -> CAPÇALERA(numero)
+
