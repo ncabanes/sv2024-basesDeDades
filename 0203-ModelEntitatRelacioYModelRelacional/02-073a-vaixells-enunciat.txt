@@ -1,0 +1,35 @@
+Es volen registrar les visites a ports realitzades pels vaixells. Partint dels requisits de dades següents, dissenya el diagrama ER:
+
+- Cada vaixell s'identifica amb el seu nom. A més, interessa emmagatzemar el nom del propietari, quin tipus de vaixell és i la història de moviments realitzats.
+
+- Cada tipus de vaixell té un codi únic. Es desitja guardar també el tonatge i el material del casc. Pot haver-hi diversos vaixells del mateix tipus.
+
+- Per cada moviment realitzat per un vaixell es guarda la longitud i latitud, i una marca temporal formada per una data i una hora.
+
+- Cada vaixell està adscrit a un port, des del qual inicia totes les seues visites. Cada port té un nom, una descripció, el país al qual pertany i la mar on se situa. En cap país pot haver-hi 2 ports d'igual nom. No obstant això hi ha ports amb el mateix nom corresponents a països diferents.
+
+- Es guarda el nom i continent de cada país i el nom i profunditat mitjana de cada mar. En tots dos casos, el nom identifica unívocament al país i mar respectivament.
+
+- Per cada visita d'un vaixell a un port interessa guardar la data en la qual va arribar al port (data d'inici) i la data de partida (data fi). Un vaixell pot visitar moltes vegades el mateix port. Si un vaixell entra al mateix port diverses vegades el mateix dia només s'emmagatzema l'última visita del dia.
+
+
+----
+
+Se quieren registrar las visitas a puertos realizadas por los buques. Partiendo de los requisitos de datos siguientes, diseña el diagrama ER:
+
+- Cada buque se identifica con su nombre. Además interesa almacenar el nombre del dueño, qué tipo de buque es y la historia de movimientos realizados.
+
+- Cada tipo de buque consta de un código único. Se desea guardar también el tonelaje y el material del casco. Puede haber varios buques del mismo tipo.
+
+- Por cada movimiento realizado por un buque se guarda la longitud y latitud, y una marca temporal formada por una fecha y una hora.
+
+- Cada buque está adscrito a un puerto, desde el que inicia todas sus visitas. Cada puerto tiene un nombre, una descripción, el país al que pertenece y el mar donde se ubica. En ningún país puede haber 2 puertos de igual nombre. Sin embargo hay puertos con el mismo nombre correspondientes a países distintos.
+
+- Se guarda el nombre y continente de cada país y el nombre y profundidad media de cada mar. En ambos casos, el nombre identifica unívocamente al país y mar respectivamente.
+
+- Por cada visita de un buque a un puerto interesa guardar la fecha en la que arribó al puerto (fecha de inicio) y la fecha de partida (fecha fin). Un buque puede visitar muchas veces el mismo puerto. Si un buque entra al mismo puerto varias veces el mismo día sólo se almacena la última visita del día.
+
+----
+
+(Universidad de la Rioja, Universidad del Cairo)
+
