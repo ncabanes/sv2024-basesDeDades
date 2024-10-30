@@ -1,0 +1,20 @@
+
+Cine (EER+MR)
+
+Volem guardar informació de pel·lícules:
+
+De cada pel·lícula volem saber el títol, l'any, la duració (en minuts) i una valoració numèrica (de 0.0 a 10.0).
+Cada pel·lícula pot ser dirigida per un o diversos directors.
+Poden participar un o diversos actors, i per a cadascun d'ells ens interessarà saber quin paper ha realitzat.
+A més, cada pel·lícula es pot enquadrar dins d'una o diverses categories (ciència-ficció, terror, drama, comèdia, etc).
+Tant dels actors com dels directors, voldrem saber el nom, data de naixement, lloc de naixement i una xicoteta biografia.
+
+-----
+
+Queremos guardar información de películas:
+
+De cada película queremos saber el título, el año, la duración (en minutos) y una valoración numérica (de 0.0 a 10.0).
+Cada película puede ser dirigida por uno o varios directores.
+Pueden participar uno o varios actores, y para cada uno de ellos nos interesará saber qué papel ha realizado.
+Además, cada película se puede encuadrar dentro de una o varias categorías (ciencia-ficción, terror, drama, comedia, etc).
+Tanto de los actores como de los directores, querremos saber el nombre, fecha de nacimiento, lugar de nacimiento y una pequeña biografía.
