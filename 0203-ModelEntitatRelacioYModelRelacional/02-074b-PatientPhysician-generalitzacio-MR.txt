@@ -1,0 +1,21 @@
+RESPONSIBLE_PHYSICIAN(physician_ID)
+C.P.:physician_ID
+
+PATIENT(ID,admit_date,patient_name,responsible_physician_ID)
+C.P.:ID
+C.EX.:responsible_physician_ID --> RESPONSIBLE_PHYSICIAN(physician_ID)
+V.N.N.:responsible_physician_ID
+
+OUTPATIENT(IDPatient,Checkback_Date)
+C.P.:IDPatient
+C.EX.:IDPatient --> PATIENT(ID)
+
+BED(IDBed)
+C.P.:IDBed
+
+RESIDENT_PATIENT(IDPatient,Discharged_Date,IDBed)
+C.P.:IDPatient
+C.EX.:IDPatient --> PATIENT(ID)
+C.EX.:IDBed --> BED(ID)
+C.ALI.:IDBed
+
