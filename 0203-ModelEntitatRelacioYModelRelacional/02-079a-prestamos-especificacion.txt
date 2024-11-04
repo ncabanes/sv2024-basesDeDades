@@ -1,0 +1,7 @@
+Cada banco (código, denominación) tiene una serie de sucursales (código, dirección), las cuales pueden conceder préstamos (código, importe, fecha contratación) a clientes (dni, nombre). Cada préstamo que acepte una sucursal puede ser para varios clientes, y cada cliente puede obtener varios préstamos en una sucursal, pero cada préstamo que un cliente pida estará asociado necesariamente a una única sucursal).
+
+Además, cada sucursal tiene asociada una serie de cuentas corrientes (código, tipo, interés). Esas cuentas pueden ser de uno o varios clientes, y en ellas cada cliente pueda tener privilegios distintos (código, detalles) (por ejemplo, que la persona X puede ingresar dinero y sacar dinero, pero la persona Y sólo pueda ingresar dinero).
+
+Además, de cada cuenta nos interesa anotar las domiciliaciones (código, descripción) que pueda tener asociadas (por ejemplo, el recibo de la luz o el del agua). Cada domiciliación deberá estar asociada necesariamente a una cuenta corriente (y sólo a una).
+
+(Basado en un ejercicio de I.E.S. Mare Nostrum, Alicante)
