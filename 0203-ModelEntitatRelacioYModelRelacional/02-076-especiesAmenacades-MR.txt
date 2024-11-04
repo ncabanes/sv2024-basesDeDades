@@ -1,0 +1,69 @@
+AMENAZA(codigo, nombre, codigoAmenazaDeQueDepende)
+C.P.: codigo
+C.Aj.: codigoAmenazaDeQueDepende -> AMENAZA
+
+ESTADO_RIESGO(codigo, nombre, numeroNivel, peligro)
+C.P.: codigo
+
+ESPECIE(nombre, genero, autoridad, fechaEval, tendencia, idioma, denominación, codigoEstadoRiesgo)
+C.P.: nombre
+C.Aj.: codigoEstadoRiesgo -> ESTADO_RIESGO 
+VNN: codigoEstadoRiesgo
+
+NOMBRE_ESPECIE(nombreBaseEspecie, idioma, denominacio)
+C.P.: (nombreBaseEspecie, idioma)
+C.Aj.: nombreBaseEspecie -> ESPECIE
+
+ESPECIE_SUFRE_AMENAZA(codigoAmenaza, nombreEspecie)
+C.P.: (codigoAmenaza, nombreEspecie)
+C.Aj.: codigoAmenaza -> AMENAZA
+C.Aj.: nombreEspecie -> ESPECIE
+
+PAIS(nombre, abreviatura, extensionKm2, nºHabitantes)
+C.P.: nombre
+
+ESTAR_PRESENTE_EN(nombreEspecie, nombrePais, condicion, nºIndividuos)
+C.P.: (nombreEspecie, nombrePais)
+C.Aj.: nombreEspecie -> ESPECIE
+C.Aj.: nombrePais -> PAIS
+
+HABITAT(codigo, descripcion)
+C.P.: codigo
+
+ACCION_CONSERVACION(codigo, descripcion)
+C.P.: codigo
+
+EMPRENDER_ACCIONES(nombreEspecie, codigoHabitat, codigoAccionConservacion)
+C.P.: (nombreEspecie, codigoHabitat, codigoAccionConservacion)
+C.Aj.: nombreEspecie -> ESPECIE
+C.Aj.: codigoHabitat -> HABITAT
+C.Aj.: codigoAccionConservacion -> ACCION_CONSERVACION
+
+REFERENCIA(nombreEspecie, numero, nombre)
+C.P.: (nombreEspecie, numero)
+C.Aj.: nombreEspecie -> ESPECIE
+
+REFERENCIA_IMAGEN(nombreEspecie, numeroReferencia, fichero, formato)
+C.P.: (nombreEspecie, numeroReferencia)
+C.Aj.: nombreEspecie -> REFERENCIA
+C.Aj.: numeroReferencia -> REFERENCIA
+
+REFERENCIA_DIRECCION_WEB(nombreEspecie, numeroReferencia, url)
+C.P.: (nombreEspecie, numeroReferencia)
+C.Aj.: nombreEspecie -> REFERENCIA
+C.Aj.: numeroReferencia -> REFERENCIA
+
+REFERENCIA_ARTICULO(nombreEspecie, numeroReferencia, titulo, fechaPublicacion)
+C.P.: (nombreEspecie, numeroReferencia)
+C.Aj.: nombreEspecie -> REFERENCIA
+C.Aj.: numeroReferencia -> REFERENCIA
+
+REFERENCIA_ARTICULO_PRIVADO(nombreEspecie, numeroReferencia)
+C.P.: (nombreEspecie, numeroReferencia)
+C.Aj.: nombreEspecie -> ARTICULO
+C.Aj.: numeroReferencia -> ARTICULO
+
+REFERENCIA_ARTICULO_PUBLICO(nombreEspecie, numeroReferencia, docPDF)
+C.P.: (nombreEspecie, numeroReferencia)
+C.Aj.: nombreEspecie -> ARTICULO
+C.Aj.: numeroReferencia -> ARTICULO
