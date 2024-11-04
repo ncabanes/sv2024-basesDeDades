@@ -1,0 +1,5 @@
+Tenim un club hípic, que imparteix classes a un cert alumne (dni i nom) usant cavalls (codi i nom) en una certa data i hora. En la majoria d'ocasions, en estes classe intervé un monitor (dni, nom). El nostre expert ens ha dit que no val la pena emprar una generalizació alumne-monitor, però que sí que pot ser interessant considerar la classe com una agregació.
+
+---
+
+Tenemos un club hípico, que imparte clases a un cierto alumno (dni y nombre) usando caballos (código y nombre) en una cierta fecha y hora. En la mayoría de ocasiones, en estas clase interviene un monitor (dni, nombre). Nuestro experto nos ha dicho que no merece la pena emplear una generalización alumno-monitor, pero que sí puede ser interesante considerar la clase como una agregación.
