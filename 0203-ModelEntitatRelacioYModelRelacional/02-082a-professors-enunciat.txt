@@ -1,0 +1,33 @@
+Ens demanen crear una base de dades per a un centre d'estudis, a partir dels següent requisits:
+
+- Cada professor (número de personal, nom, primer cognom) impartix una o diverses assignatures (codi, nom, crèdits), i suposarem que cada assignatura és impartida per un únic professor.
+
+- Cada assignatura correspon a un cert grup (codi, màxim d'alumnes). En un grup, indubtablement, existirà almenys una assignatura. Les assignatures tindran com a codis números correlatius, que per a cada grup es numeraran a partir de 1.
+
+- Al seu torn, cada grup ocuparà una o diverses aules (identificades només pel seu número) durant un cert dia i una certa hora. Cada aula pot ser utilitzada per diversos grups.
+
+- Cada alumne (codi, nom -que no ha de ser nul-, dni) pot realitzar diverses matrícules (cadascuna amb un codi de matrícula i associada a un cert curs acadèmic, per exemple, el 2024-2025), i cada matrícula correspon a un únic alumne.
+
+- Considerarem que cada grup consta de (està format per) diverses matrícules d'alumnes, i que cada matrícula d'alumne estarà forçosament associada a un grup. Ens interessa la qualificació final obtinguda en eixa matrícula d'eixe grup.
+
+- Finalment, cada professor pertany a un únic departament i ha de pertànyer a un. En cada departament ha d'haver-hi almenys un professor, però és freqüent que hi haja varis. Un d'eixos professors actuarà com a director del departament.
+
+(Basat en un exercici d'U.Cantàbria)
+
+-----
+
+Nos piden crear una base de datos para un centro de estudios, a partir de los siguiente requisitos:
+
+- Cada profesor (número de personal, nombre, primer apellido) imparte una o varias asignaturas (código, nombre, créditos), y supondremos que cada asignatura es impartida por un único profesor.
+
+- Cada asignatura corresponde a un cierto grupo (código, máximo de alumnos). En un grupo, indudablemente, existirá al menos una asignatura. Las asignaturas tendrán como códigos números correlativos, que para cada grupo se numerarán de 1 en adelante.
+
+- A su vez, cada grupo ocupará una o varias aulas (identificadas sólo por su número) durante un cierto día y una cierta hora. Cada aula puede ser utilizada por diversos grupos.
+
+- Cada alumno (código, nombre -que no debe ser nulo-, dni) puede realizar varias matrículas (cada una con un código de matrícula y asociada a un cierto curso académico, por ejemplo, el 2024-2025), y cada matrícula corresponde a un único alumno.
+
+- Por su parte, consideraremos que cada grupo consta de (está formado por) varias matrículas de alumnos, y que cada matrícula de alumno estará forzosamente asociada a un grupo. Nos interesa la calificación final obtenida en esa matrícula de ese grupo.
+
+- Finalmente, cada profesor pertenece a un único departamento y debe pertenecer a uno. En cada departamento debe haber al menos un profesor, pero es frecuente que haya varios. Uno de esos profesores actuará como director del departamento.
+
+(Basado en un ejercicio de U.Cantabria)
