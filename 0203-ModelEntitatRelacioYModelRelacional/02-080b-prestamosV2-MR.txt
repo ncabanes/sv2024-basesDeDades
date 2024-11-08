@@ -1,0 +1,31 @@
+PERSONA (código, nombre)
+C.P.: código
+
+CLIENTE (código, dirección)
+C.P.: código
+C.Aj: código -> PERSONA
+
+DIRECTOR (código, salarioBruto)
+C.P.: código
+C.Aj: código -> PERSONA
+
+BANCO (código, denominación)
+C.P.: código
+
+SUCURSAL (código, dirección, códigoBanco, códigoDirector)
+C.P.: código
+VNN: códigoBanco
+C.Alt.: códigoDirector
+C.Aj: códigoBanco -> BANCO
+C.Aj: códigoDirector -> DIRECTOR
+
+PRESTAMO (código, importe, fechaContratación)
+C.P.: código
+
+TENER_PRESTAMO(codSucursal, codPrestamo, codCliente)
+C.P.: (codPrestamo, codCliente)
+VNN: codSucursal
+C.Aj: codSucursal -> Sucursal
+C.Aj: codPrestamo -> Prestamo
+C.Aj: codCliente -> Cliente
+
