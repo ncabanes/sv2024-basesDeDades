@@ -1,0 +1,28 @@
+Els Arcoch (EER)
+
+----
+
+La tribu dels Arcoch, habitants del Planeta Nak i únics supervivents de la guerra de l'any 2084, que va destruir els quatre planetes del seu sistema solar, s'han proposat construir una nova forma d'organització social per a protegir la seua raça, actualment en extinció.
+
+Cada membre de la tribu desenvolupa alguna activitat, la qual ha d'aprendre i després perfeccionar. Per exemple, caçar, cultivar la terra, educar, etc.. Cada xiquet és educat i inicia alguna activitat en l'adolescència, cada ancià pot deixar de treballar si ho desitja.
+
+D'acord amb l'activitat que desenvolupe cada Arcoch, se li entreguen els elements necessaris. Si es canvia d'activitat estos han de ser retornats. Es coneix quins elements han de ser entregats per activitat.
+
+Tal com s'atorguen béns per activitat, s'atorguen béns a les famílies d'acord amb l'edat de la família (temps que porta constituïda la família) i al nombre d'integrants que tinga. Per exemple, quan dos Arcoch decideixen formar una família, la Tribu els dona una barraca i altres utensilis.
+
+Es demana construir el Diagrama de E-R que permeta emmagatzemar la informació rellevant per als Arcoch.
+
+----
+
+La tribu de los Arcoch, habitantes del Planeta Nak y únicos sobrevivientes de la guerra del año 2084, que destruyó los cuatro planetas de su sistema solar, se han propuesto construir una nueva forma de organización social para proteger su raza, actualmente en extinción.
+
+Cada miembro de la tribu desarrolla alguna actividad, la cual debe aprender y luego perfeccionar. Por ejemplo, cazar, cultivar la tierra, educar, etc.. Cada niño es educado e inicia alguna actividad en la adolescencia, cada anciano puede dejar de trabajar si lo desea.
+
+De acuerdo a la actividad que desarrolle cada Arcoch, se le entregan los elementos necesarios. Si se cambia de actividad estos deben ser devueltos. Se conoce qué elementos deben ser entregados por actividad.
+
+Tal como se otorgan bienes por actividad, se otorgan bienes a las familias de acuerdo a la edad de la familia (tiempo que lleva constituida la familia) y al número de integrantes que tenga. Por ejemplo, cuando dos Arcoch deciden formar una familia, la Tribu les da una choza y otros utensilios.
+
+Se pide construir el Diagrama de E-R que permita almacenar la información relevante para los Arcoch.
+
+
+(Universidad Magallanes, Chile)
