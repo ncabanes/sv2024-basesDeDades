@@ -1,0 +1,45 @@
+Campionat d'Escacs
+
+El club d'Escacs de Villatortas de Arriba, ha sigut encarregat de l'organització dels pròxims campionats mundials que se celebraran en l'esmentada localitat. Per este motiu, es desitja crear una base de dades per a tota la gestió relativa a participants, allotjaments i partides. Tenint en compte que:
+
+En el campionat participen jugadors i àrbitres: de tots dos es requerix conéixer el número d'associat, nom, adreça, telèfon de contacte i campionats en els quals han participat (com a jugador o com a àrbitre). Dels jugadors es precisa a més el nivell de joc en una escala d'1 a 10.
+
+Cap àrbitre pot participar com a jugador.
+
+Els països envien al campionat un conjunt de jugadors i àrbitres, encara que no tots els països envien participants. Tot jugador i àrbitre és enviat per un únic país. Un país pot ser representat per un altre país.
+
+Cada país s'identifica per un número correlatiu segons el seu orde alfabètic i interessa conéixer a més del seu nom, el nombre de clubs d'escacs existents en este.
+
+Cada partida s'identifica per un número correlatiu (CodiPartida), la juguen dos jugadors i l'arbitra un àrbitre. Interessa registrar les partides que juguen cada jugador i el color (blanques o negres) amb el qual es juga. Ha de tindre's en quanta que un àrbitre no pot arbitrar a jugadors enviats pel mateix país que li ha enviat a ell.
+
+Tot participant participa en almenys una partida. Tant jugadors com àrbitres s'allotgen en un dels hotels en el que es desenrotllen les partides, es desitja conéixer en quin hotel i en què dates s'ha allotjat cadascun dels participants. Els participants poden no romandre en Villatortas durant tot el campionat, sinó acudir quan han de jugar alguna partida, allotjant-se en el mateix o distint hotel. De cada hotel, es desitja conéixer el nom, la direcció i el número de telèfon. El campionat es desenvolupa al llarg d'una sèrie de jornades (any, mes, dia) i cada partida té lloc en una de les jornades encara que no tingues lloc partides totes les jornades.
+
+Cada partida se celebra en una de les sales de les quals poden disposar els hotels, es desitja conéixer el nombre d'entrades venudes a la sala per a cada partida. De cada sala, es desitja conéixer la capacitat i mitjans de què disposa (ràdio, televisió, vídeo,...) per a facilitar la retransmissió de les trobades. Una sala pot disposar de diversos mitjans distints.
+
+De cada partida es pretén registrar tots els moviments que la componen, la identificació de moviment s'establix sobre la base d'un número d'orde dins de cada partida: per a cada moviment es guarden la jugada (5 posicions) i un breu comentari realitzat per un expert.
+
+(I.E.S. Mare Nostrum - Alacant)
+
+----
+
+Campeonato de Ajedrez
+
+El club de Ajedrez de Villatortas de Arriba, ha sido encargado de la organización de los próximos campeonatos mundiales que se celebrarán en la mencionada localidad. Por este motivo, desea llevar una base de datos toda la gestión relativa a participantes, alojamientos y partidas. Teniendo en cuenta que:
+
+En el campeonato participan jugadores y árbitros: de ambos se requiere conocer el número de asociado, nombre, dirección, teléfono de contacto y campeonatos en los que han participado (como jugador o como árbitro). De los jugadores se precisa además el nivel de juego en una escala de 1 a 10.
+
+Ningún árbitro puede participar como jugador.
+
+Los países envían al campeonato un conjunto de jugadores y árbitros, aunque no todos los países envían participantes. Todo jugador y árbitro es enviado por un único país. Un país puede ser representado por otro país.
+
+Cada país se identifica por un número correlativo según su orden alfabético e interesa conocer además de su nombre, el número de clubes de ajedrez existente en el mismo.
+
+Cada partida se identifica por un número correlativo (CódigoPartida), la juegan dos jugadores y la arbitra un árbitro. Interesa registrar las partidas que juegan cada jugador y el color (blancas o negras) con el que se juega. Ha de tenerse en cuanta que un árbitro no puede arbitrar a jugadores enviados por el mismo país que le ha enviado a él.
+
+Todo participante participa en al menos una partida. Tanto jugadores como árbitros se alojan en uno de los hoteles en lo que se desarrollan las partidas, se desea conocer en qué hotel y en que fechas se ha alojado cada uno de los participantes. Los participantes pueden no permanecer en Villatortas durante todo el campeonato, sino acudir cuando tienen que jugar alguna partida alojándose en el mismo o distinto hotel. De cada hotel, se desea conocer el nombre, la dirección y el número de teléfono. El campeonato se desarrolla a lo largo de una serie de jornadas (año, mes, día) y cada partida tiene lugar en una de las jornadas aunque no tengas lugar partidas todas las jornadas.
+
+Cada partida se celebra en una de las salas de las que pueden disponer los hoteles, se desea conocer el número de entradas vendidas en la sala para cada partida. De cada sala, se desea conocer la capacidad y medios de que dispone (radio, televisión, vídeo,...) para facilitar la retransmisión de los encuentros. Una sala puede disponer de varios medios distintos.
+
+De cada partida se pretende registrar todos los movimientos que la componen, la identificación de movimiento se establece en base a un número de orden dentro de cada partida: para cada movimiento se guardan la jugada (5 posiciones) y un breve comentario realizado por un experto.
+
+(I.E.S. Mare Nostrum - Alicante)
