@@ -1,0 +1,49 @@
+Rincón de lectura
+
+----
+
+Ens demanen ajuda per a modelar el sistema d'una biblioteca, brindant-nos la següent informació. 
+
+Els llibres són escrits per autors dels quals coneixem el seu nom, la seua nacionalitat i la seua data de naixement. Els noms dels autors no poden repetir-se. A més, sabem que els llibres compten amb un títol únic, l'idioma i el seu número de pàgines. Addicionalment, sabem que cada llibre té edicions, de les quals sabem l'any i l'ISBN (que no pot repetir-se).
+
+La biblioteca realitza préstecs de diferents edicions a usuaris. Dels usuaris sabem el seu DNI, el seu nom i cognom i el seu domicili. També volem registrar la data del préstec i la data de devolució de les transaccions realitzades.
+
+Tinga en compte la següent informació addicional:
+
+- Un autor escriu molts llibres i un llibre pot ser escrit per molts autors.
+
+- Un llibre pot tindre moltes edicions (almenys una).
+
+- Una edició té moltes còpies, però cada còpia pertany a una edició.
+
+- Una còpia podia haver sigut prestada a molts usuaris i molts usuaris poden haver demanat la mateixa còpia en moments distints.
+
+- En alguns casos un llibre pot fer referència a un altre llibre, però només a un, el mateix en el cas invers.
+
+- Les còpies tenen un número únic dins de cada edició, però el mateix pot repetir-se dins d'altres edicions.
+
+Universitat Nacional de Quilmes, 2018
+
+----
+
+Nos piden ayuda para modelar el sistema de una biblioteca, brindándonos la siguiente información. 
+
+Los libros son escritos por autores de los cuales conocemos su nombre, su nacionalidad y su fecha de nacimiento. Los nombres de los autores no pueden repetirse. Además, sabemos que los libros cuentan con un título único, el idioma y su número de páginas. Adicionalmente, sabemos que cada libro tiene ediciones, de las cuales sabemos el año y el ISBN (que no puede repetirse).
+
+La biblioteca realiza préstamos de distintas ediciones a usuarios. De los usuarios sabemos su DNI, su nombre y apellido y su domicilio. También queremos registrar la fecha del préstamo y la fecha de devolución de las transacciones realizadas.
+
+Tenga en cuenta la siguiente información adicional:
+
+- Un autor escribe muchos libros y un libro puede ser escrito por muchos autores.
+
+- Un libro puede tener muchas ediciones (al menos una).
+
+- Una edición tiene muchas copias, pero cada copia pertenece a una edición.
+
+- Una copia pudo haber sido prestada a muchos usuarios y muchos usuarios pueden haber pedido la misma copia en momentos distintos.
+
+- En algunos casos un libro puede hacer referencia a otro libro, pero solo a uno, lo mismo en el caso inverso.
+
+- Las copias tienen un número único dentro de cada edición, pero el mismo puede repetirse dentro de otras ediciones.
+
+Universidad Nacional de Quilmes, 2018
