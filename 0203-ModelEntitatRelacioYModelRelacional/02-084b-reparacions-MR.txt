@@ -1,0 +1,27 @@
+CLIENT(codi, nom, carrerPis, ciutat)
+CP: codi
+
+TEL_CLIENT(codiClient, numTlf)
+CP: (codiClient, numTlf)
+CF: codiClient -> CLIENT(codi)
+
+EQUIP(codiClient, num, descripció)
+CP: (codiClient, num)
+CF: codiClient -> CLIENT(codi)
+
+ELEMENT(codi, nom, codiClient, numEquip)
+CP: codi
+CF: codiClient -> EQUIP(codiClient)
+CF: numEquip -> EQUIP(num)
+VNN: codiClient
+VNN: numEquip
+
+MA_OBRA(codiElement, tipusServei)
+CP: codiElement
+CF: codiElement -> ELEMENT(codi)
+CF: codiClient -> EQUIP(codiClient)
+CF: numEquip -> EQUIP(num)
+
+COMPONENT(codiElement, marca, model, codiClient, numEquip)
+CP: codiElement
+CF: codiElement -> ELEMENT(codi)
