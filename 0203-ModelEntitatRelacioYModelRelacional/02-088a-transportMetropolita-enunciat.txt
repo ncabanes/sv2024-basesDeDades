@@ -1,0 +1,23 @@
+TRANSPORT METROPOLITÀ
+
+L'ajuntament d'una gran ciutat desitja crear una eina informàtica per a gestionar el transport metropolità. El sistema oferirà informació referent a les línies de metro, les estacions i els seus diferents accessos i els trens que formen la xarxa metropolitana.
+A. Una línia està composta per una sèrie d'estacions en un ordre determinat. És molt important recollir la informació sobre aquest ordre.
+B. Cada estació pertany almenys a una línia, podent pertànyer a vàries. A més, cada estació pot tindre diversos accessos, però considerem que un accés només pot pertànyer a una única estació.
+C. Cada línia té assignats una quantitat de trens. Un tren només deixa d'estar assignat a una línia quan es troba en reparació.
+D. Algunes estacions (no totes) tenen cotxeres (la capacitat d'emmagatzematge d'una cotxera pot variar significativament d'una estació a una altra) i cada tren té reservada una única cotxera. Un tren pot canviar de cotxera reservada, però no quedar sense ella. Cada cotxera pot estar reservada per a un o diversos trens.
+E. Hi ha dos tipus d'estacions: simples i mixtes. Les primeres només tenen servei de metro, mentre que les segones ofereixen connexió amb altres serveis (estació de tren, estació d'autobusos, aeroport,...). Per a les estacions mixtes interessa conéixer amb quins altres serveis ofereix connexió.
+F. Cada tren té un codi intern que l'identifica. Així mateix interessa conéixer el model del tren, el nombre de vagons, l'antiguitat, el color, el nom de l'empresa fabricadora, la capacitat i si posseeix o no accés per a minusvàlids (aquestes tres últimes propietats només depenen del model del tren).
+
+-------------
+
+TRANSPORTE METROPOLITANO
+
+El ayuntamiento de una gran ciudad desea crear una herramienta informática para gestionar el transporte metropolitano. El sistema ofrecerá información referente a las líneas de metro, las estaciones y sus diferentes accesos y los trenes que forman la red metropolitana.
+A. Una línea está compuesta por una serie de estaciones en un orden determinado. Es muy importante recoger la información sobre este orden.
+B. Cada estación pertenece al menos a una línea, pudiendo pertenecer a varias. A su vez cada estación puede tener varios accesos, pero consideramos que un acceso sólo puede pertenecer a una única estación.
+C. Cada línea tiene asignados una cantidad de trenes. Un tren sólo deja de estar asignado a una línea cuando se encuentra en reparación.
+D. Algunas estaciones (no todas) tienen cocheras (la capacidad de almacenamiento de una cochera puede variar significativamente de una estación a otra) y cada tren tiene reservada una única cochera. Un tren puede cambiar de cochera reservada, pero no quedar sin ella. Cada cochera puede estar reservada para uno o varios trenes.
+E. Hay dos tipos de estaciones: simples y mixtas. Las primeras sólo tienen servicio de metro, mientras que las segundas ofrecen conexión con otros servicios (estación de tren, estación de autobuses, aeropuerto,...). Para las estaciones mixtas interesa conocer con qué otros servicios ofrece conexión.
+F. Cada tren tiene un código interno que lo identifica. Asimismo interesa conocer el modelo del tren, el número de vagones, la antigüedad, el color, el nombre de la empresa fabricante, la capacidad y si posee o no acceso para minusválidos (estas tres últimas propiedades sólo dependen del modelo del tren).
+
+(Universidad de Sevilla, Universidad Carlos III de Madrid)
