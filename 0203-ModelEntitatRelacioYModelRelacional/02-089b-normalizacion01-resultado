@@ -1,0 +1,26 @@
+MATRICULA
+
+10 BBDD NC
+ 5 BBDD NC
+20 BBDD NC
+10 PRO  MR
+ 5 PRO  MR
+20 SI   JF
+
+ASIGNATURA
+
+BBDD Bases de Datos
+PRO  Programación
+SI   Sistemas
+
+ALUMNO
+
+10 SERGIO
+ 5 MARCOS
+20 ÁLVARO
+
+PROFESOR
+
+NC Nacho Cabanes
+MR MariChelo Rubio
+JF JM Fuster
