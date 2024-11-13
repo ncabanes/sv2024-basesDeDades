@@ -1,0 +1,35 @@
+ELEMENT_GEOLOGIC(codi,nom)
+C.P.: codi
+
+RIU(codi, longitud)
+C.P.: codi
+C.Ali.: codi -> ELEMENT_GEOLOGIC(codi)
+
+SISTEMA_MUNTANYENC(codi,nom)
+C.P.: codi
+
+MUNTANYA(codi, altura, codiSistemaMunt)
+C.P.: codi
+C.Ali.: codi -> ELEMENT_GEOLOGIC(codi)
+C.Ali.: codiSistemaMunt -> SISTEMA_MUNTANYENC(codi)
+VNN: codiSistemaMunt
+
+PROVINCIA(codi,nom,capital)
+C.P.: codi
+
+PROVINCIA_CONTE_SISTEMA(codiProvincia, codiSistemaMunt)
+C.P.: (codiProvincia, codiSistemaMunt)
+C.Ali.: codiProvincia -> PROVINCIA(codi)
+C.Ali.: codiSistemaMunt -> SISTEMA_MUNTANYENC(codi)
+
+PROVINCIA_BANYA_RIU(codiProvincia, codiRiu, km)
+C.P.: (codiProvincia, codiRiu)
+C.Ali.: codiProvincia -> PROVINCIA(codi)
+C.Ali.: codiRiu -> RIU(codi)
+
+ES_AFLUENTE(codiRiuPare, codiRiuFil, codiProvincia, puntKilom)
+C.P.: (codiRiuPare, codiRiuFil)
+C.Altern: (codiRiuFil, codiProvincia)
+C.Ali.: codiProvincia -> PROVINCIA(codi)
+C.Ali.: codiRiuPare -> RIU(codi)
+C.Ali.: codiRiuFil -> RIU(codi)
