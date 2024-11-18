@@ -19,9 +19,9 @@ VNN: numEquip
 MA_OBRA(codiElement, tipusServei)
 CP: codiElement
 CF: codiElement -> ELEMENT(codi)
-CF: codiClient -> EQUIP(codiClient)
-CF: numEquip -> EQUIP(num)
 
-COMPONENT(codiElement, marca, model, codiClient, numEquip)
+COMPONENT(codiElement, marca, model, codiClientPropietari, numEquip)
 CP: codiElement
 CF: codiElement -> ELEMENT(codi)
+CF: codiClientPropietari -> EQUIP(codiClient)
+CF: numEquip -> EQUIP(num)
