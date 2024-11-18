@@ -1,0 +1,19 @@
+Ens han demanat crear un sistema bàsic de facturació. 
+
+Cada factura serà per a un únic client, si bé poden existir diverses factures per a un mateix client. Dels clients ens interessa anotar el seu codi, el seu nom (obligatori), la seua adreça (carrer, número, ciutat, codi postal) i el seu telèfon.
+
+Les factures tenen un número correlatiu (que es reinicia cada any) i una data. Cada factura està formada per diverses "línies", numerades d'1 a N, en les quals es detalla l'article (obligatori) que s'ha venut, la quantitat (obligatòria també), l'import unitari, i l'import total (calculat).
+
+Cada article pot apareixer en diverses línies de factura distintes, i d'ells ens interessa anotar el seu codi, el seu nom i el seu preu unitari. També volen deixar constància de les categories (codi i descripció) a les quals pertanyen els articles: cada article ha de pertànyer a una (i només una) categoria, i diversos articles poden pertànyer a una mateixa categoria.
+
+
+---
+
+Nos han pedido crear un sistema básico de facturación. 
+
+Cada factura será para un único cliente, si bien pueden existir diversas facturas para un mismo cliente. De los clientes nos interesa almacenar su código, su nombre (obligatorio), su dirección (calle, número, ciudad, código postal) y su teléfono.
+
+Las facturas tienen un número correlativo (que se reinicia cada año) y una fecha. Cada factura está formada por varias "líneas", numeradas de 1 a N, en las que se detalla el artículo (obligatorio) que se ha vendido, la cantidad (obligatoria también), el importe unitario, y el importe total (calculado).
+
+Cada artículo puede aparecer en varias líneas de factura distintas, y de ellos nos interesa anotar su código, su nombre y su precio unitario. También quieren llevar constancia de las categorías (código y descripción) a las que pertenecen los artículos: cada artículo debe pertenecer a una (y sólo una) categoría, y varios artículos pueden pertenecer a una misma categoría.
+
