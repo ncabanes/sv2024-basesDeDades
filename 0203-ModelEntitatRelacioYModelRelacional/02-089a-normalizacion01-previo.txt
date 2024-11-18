@@ -4,3 +4,15 @@
 10 SERGIO PRO  Programación   MR MariChelo Rubio
  5 MARCOS PRO  Programación   MR MariChelo Rubio
 20 ÁLVARO SI   Sistemas       JF JM Fuster
+
+Clave: código de alumo + código de asignatura
+
+---
+
+Fases:
+
+1 - Separar grupos repetitivos
+
+2 - Separar atributos que dependan de parte de la clave primaria
+
+3 - Separar atributos que dependan de otros atributos que no sean clave primaria
