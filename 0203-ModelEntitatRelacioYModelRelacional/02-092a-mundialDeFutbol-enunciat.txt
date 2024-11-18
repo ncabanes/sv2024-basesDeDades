@@ -1,0 +1,36 @@
+MUNDIAL DE FUTBOL
+
+Un conegut periòdic esportiu desitja crear una base de dades per a emmagatzemar informació relativa a un campionat mundial de futbol. Ha de recollir-se informació sobre les seleccions nacionals participants, els jugadors, els entrenadors, els col·legiats i els estadis on es van celebrar els partits.
+
+A. Un jugador pertany a una única selecció nacional i no hi ha dos jugadors amb el mateix nom. És important recollir els malnoms o sobrenoms d'aquells jugadors que els posseïsquen.
+
+B. Un jugador pot jugar en diversos llocs diferents al llarg del campionat (defensa, central, davanter,...) però en un determinat partit només pot jugar en un lloc.
+
+C. De cada jugador interessa la seua edat, país i ciutat de naixement, així com el nom del club al qual pertany i a quin país pertany aquest club.
+
+D. Cada selecció nacional té un únic entrenador i un entrenador només pot entrenar a una selecció. Interessa conéixer l'edat i la nacionalitat de cada entrenador, així com els diferents clubs als que va entrenar en el passat.
+
+E. Cada partit del campionat enfronta a dues seleccions i se celebra en un estadi. Interessa saber la data i el resultat final del partit, així com el nom, la ciutat i la capacitat de l'estadi en el qual se celebra el partit. En un mateix estadi pot jugar-se més d'un partit (per descomptat en dates diferents).
+
+F. En cada partit intervenen tres col·legiats: l'àrbitre i dos jutges de línia (un per a cada banda). Un col·legiat pot realitzar una funció en un partit i una altra diferent en un altre. És convenient conéixer la nacionalitat de cada col·legiat.
+
+
+----
+
+
+
+Un conocido periódico deportivo desea crear una base de datos para almacenar información relativa a un campeonato mundial de fútbol. Debe recogerse información sobre las selecciones nacionales participantes, los jugadores, los entrenadores, los colegiados y los estadios donde se celebraron los partidos.
+
+A. Un jugador pertenece a una única selección nacional y no hay dos jugadores con el mismo nombre. Es importante recoger los motes o sobrenombres de aquellos jugadores que los posean.
+
+B. Un jugador puede jugar en varios puestos distintos a lo largo del campeonato (defensa, central, delantero,...) pero en un determinado partido sólo puede jugar en un puesto.
+
+C. De cada jugador interesa su edad, país y ciudad de nacimiento, así como el nombre del club al cual pertenece y a qué país pertenece dicho club.
+
+D. Cada selección nacional tiene un único entrenador y un entrenador sólo puede entrenar a una selección. Interesa conocer la edad y la nacionalidad de cada entrenador, así como los distintos clubes a los que entrenó en el pasado.
+
+E. Cada partido del campeonato enfrenta a dos selecciones y se celebra en un estadio. Interesa saber la fecha y el resultado final del partido, así como el nombre, la ciudad y la capacidad del estadio en el que se celebra el partido. En un mismo estadio puede jugarse más de un partido (por supuesto en fechas distintas).
+
+F. En cada partido intervienen tres colegiados: el árbitro y dos jueces de línea (uno para cada banda). Un colegiado puede realizar una función en un partido y otra distinta en otro. Es conveniente conocer la nacionalidad de cada colegiado.
+
+(Universidad de Sevilla, curso 2023/24, asignatura "Bases de datos", tema 2, problema 4)
