@@ -1,0 +1,23 @@
+ARTICLES i VENEDORS
+
+Clau: CODI_ART, CODI_V
+
+CODI_ART  NOM_ART                PREU CODI_CAT   NOM_CAT       CODI_V  NOM_V
+     101  TP-Link Archer T3U    18,99       AW   Antena WiFi      AMZ  Amazon
+     102  TP-Link Archer T3U+   24,99       AW   Antena WiFi      AMZ  Amazon
+     201  Canon EOS 4000D      439,99       CR   Càmera Reflex    AMZ  Amazon
+     201  Canon EOS 4000D      399,99       CR   Càmera Reflex    FNC  Fnac
+     202  Canon EOS 2000D      449,99       CR   Càmera Reflex    ECI  El Corte Inglés
+     202  Canon EOS 2000D      449,99       CR   Càmera Reflex    ECI  El Corte Inglés
+     301  Canon EOS R100       499,00       CE   Càmera Evil      ECI  El Corte Inglés
+     301  Canon EOS R100       489,00       CE   Càmera Evil      AMZ  Amazon
+
+
+Passos:
+
+1 - Separar grups repetitius
+
+2 - Separar atributs que depenguen de part de la clau
+
+3 - Separar atributs que depenguen d'altres atributs no clau
+

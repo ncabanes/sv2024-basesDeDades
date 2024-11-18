@@ -1,0 +1,53 @@
+ARTICLES
+
+Clau: CODI_ART, CODI_V
+
+CODI_ART  NOM_ART                PREU CODI_CAT   NOM_CAT       CODI_V  NOM_V
+     101  TP-Link Archer T3U    18,99       AW   Antena WiFi      AMZ  Amazon
+     102  TP-Link Archer T3U+   24,99       AW   Antena WiFi      AMZ  Amazon
+     201  Canon EOS 4000D      439,99       CR   Càmera Reflex    AMZ  Amazon
+     201  Canon EOS 4000D      399,99       CR   Càmera Reflex    FNC  Fnac
+     202  Canon EOS 2000D      449,99       CR   Càmera Reflex    ECI  El Corte Inglés
+     202  Canon EOS 2000D      449,99       CR   Càmera Reflex    ECI  El Corte Inglés
+     301  Canon EOS R100       499,00       CE   Càmera Evil      ECI  El Corte Inglés
+     301  Canon EOS R100       489,00       CE   Càmera Evil      AMZ  Amazon
+
+
+ARTICLES(codi_art, nom_art, preu, codi_cat, nom_cat, codi_v, nom_v)
+
+
+Passos:
+
+
+1 - Separar grups repetitius
+
+No veig res !!! ;-)
+
+ARTICLES(codi_art, nom_art, preu, codi_cat, nom_cat, codi_v, nom_v)
+
+
+2 - Separar atributs que depenguen de part de la clau
+
+ARTICLES(codi_art, codi_v, preu)
+CP(codi_art, codi_v)
+
+VENEDOR(codi_v, nom_v)
+CP(codi_v)
+
+ARTICLE(codi_art, nom_art, codi_cat, nom_cat)
+CP(codi_art)
+
+
+3 - Separar atributs que depenguen d'altres atributs no clau
+
+ARTICLES(codi_art, codi_v, preu)
+CP(codi_art, codi_v)
+
+VENEDOR(codi_v, nom_v)
+CP(codi_v)
+
+ARTICLE(codi_art, nom_art, codi_cat)
+CP(codi_art)
+
+CATEGORIA(codi_cat, nom_cat)
+CP(codi_cat)
