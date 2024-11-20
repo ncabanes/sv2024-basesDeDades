@@ -1,0 +1,21 @@
+BIBLIOTECA
+
+Una biblioteca està interessada a automatitzar la gestió de préstecs, el funcionament de la qual és:
+
+- Registrar el soci que s'emporta l'exemplar del llibre, dates de lliurament, devolució prevista i de devolució.
+- La biblioteca aquesta organitzada en diverses seus i el soci pot agafar llibres de qualsevol d'elles.
+- Del soci es tenen les dades personals bàsiques.
+- I dels llibres, tots els camps descriptius que els caracteritzen (títol, idioma, autors, editorial, data,...).
+- A més, de cada exemplar es voldrà conéixer l'estat en el qual es troba (prestable, en reparació, fora de circulació).
+
+---
+
+Una biblioteca está interesada en automatizar la gestión de préstamos, cuyo funcionamiento es:
+
+- Registrar el socio que se lleva el ejemplar del libro, fechas de entrega, devolución prevista y de devolución.
+- La biblioteca esta organizada en diversas sedes y el socio puede coger libros de cualquiera de ellas.
+- Del socio se tienen los datos personales básicos.
+- Y de los libros, todos los campos descriptivos que los caracterizan (título, idioma, autores, editorial, fecha,...).
+- Además, de cada ejemplar se querrá conocer el estado en el que se encuentra (prestable, en reparación, fuera de circulación)
+
+(U.Cantabria)
