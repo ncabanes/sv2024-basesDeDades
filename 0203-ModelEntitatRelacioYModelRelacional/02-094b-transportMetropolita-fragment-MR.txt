@@ -1,0 +1,36 @@
+LÍNIA ( codi, nom )
+CP: codi
+
+TREN ( codi, numVagons, codiLinia )
+CP: codi
+CExt: codiLinia -> LÍNIA(codi)
+VNN: codiLinia
+
+ESTACIÓ ( codi, nom )
+CP: codi
+
+FORMADA_PER( codiLinia, codiEstació, numEstació )
+CP: (codiLinia, codiEstació)
+CExt: codiLinia -> LÍNIA(codi)
+CExt: codiEstació -> ESTACIÓ(codi)
+
+ACCÉS( codi, ubicació )
+CP: codi
+
+ACCÉS_PERTANY_ESTACIÓ(codiAccés, codiEstació)
+CP: codiAccés
+CAlt: codiEstació
+CExt: codiAccés -> ACCÉS(codi)
+CExt: codiEstació -> ESTACIÓ(codi)
+
+ESTACIÓ_SIMPLE(codi)
+CP: codi
+CExt: codi -> ESTACIÓ(codi)
+
+ESTACIÓ_MIXTA(codi)
+CP: codi
+CExt: codi -> ESTACIÓ(codi)
+
+ALTRE_SERVEI_ESTACIÓ_MIXTA(codiEstacióMixta, servei)
+CP: (codiEstacióMixta, servei)
+CExt: codiEstacióMixta -> MIXTA(codi)
