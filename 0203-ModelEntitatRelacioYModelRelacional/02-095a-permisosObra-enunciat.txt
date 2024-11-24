@@ -1,0 +1,37 @@
+Una xarxa de municipis ha acordat desenvolupar un sistema informàtic per a automatitzar la gestió de permisos d'obra en immobles. Ens demanen que dissenyem un esquema E/R que arreplegue la informació del sistema d'acord amb el següent:
+• Cada immoble s'identifica mitjançant el seu número de propietat, pertany a una sola persona i està situat en un municipi concret.
+• Per cada persona s'emmagatzema en la BD el seu DNI, nom i adreça.
+• Per cada sol·licitud de permís d'obra, realitzada per una persona per a un immoble concret, es guarda la descripció de l'objectiu de l'obra i la quantitat pressupostada. Una persona pot sol·licitar més d'un permís d'obra. Dos sol·licituds de la mateixa persona per al mateix immoble tindran dates de sol·licitud diferents.
+• En la BD figuraran tots els immobles i els seus propietaris encara que no s'haja sol·licitat cap permís per a estos.
+• El municipi assigna l'obra a un aparellador, qui estudiarà la viabilitat de l'obra. Interessa guardar la data d'assignació de cada obra al seu aparellador. Cada aparellador està identificat en la BD mitjançant un número i es disposa del seu nom i número de telèfon.
+• Cada aparellador està en plantilla en un únic municipi. No obstant això, pot treballar també per a altres municipis. Interessa emmagatzemar, a més del municipi en el qual està en plantilla, per a quins municipis treballa cada aparellador. Un municipi pot tindre en plantilla a diversos aparelladors.
+• Una vegada completat l'estudi d'un permís d'obra, l'aparellador pren com a resolució la concessió o denegació del permís. Interessa emmagatzemar la data de la resolució i la pròpia resolució.
+
+A més de les dades indicades anteriorment es vol guardar en la BD:
+• El tipus d'immoble, els seus metres quadrats i la seua adreça.
+• El nom del municipi i l'adreça i telèfon de l'ajuntament.
+• La quantitat de peticions d'obra que ha sol·licitat cada persona per a cada immoble.
+
+NO AFEGIR a l'esquema E/R INFORMACIÓ QUE NO S'HAJA ESMENTAT (com a nous atributs, relacions...)
+
+Universitat La Rioja, 2004
+
+------------------------
+
+Una red de municipios ha acordado desarrollar un sistema informático para automatizar la gestión de permisos de obra en inmuebles. Nos piden que diseñemos un esquema E/R que recoja la información del sistema de acuerdo a lo siguiente:
+• Cada inmueble se identifica mediante su número de propiedad, pertenece a una sola persona y está ubicado en un municipio concreto.
+• Por cada persona se almacena en la BD su DNI, nombre y dirección.
+• Por cada solicitud de permiso de obra, realizada por una persona para un inmueble concreto, se guarda la descripción del objetivo de la obra y la cantidad presupuestada. Una persona puede solicitar más de un permiso de obra. Dos solicitudes de la misma persona para el mismo inmueble tendrán fechas de solicitud diferentes.
+• En la BD figurarán todos los inmuebles y sus propietarios aunque no se haya solicitado ningún permiso para los mismos.
+• El municipio asigna la obra a un aparejador, quien estudiará la viabilidad de la obra. Interesa guardar la fecha de asignación de cada obra a su aparejador. Cada aparejador está identificado en la BD mediante un número y se dispone de su nombre y número de teléfono.
+• Cada aparejador está en plantilla en un único municipio. Sin embargo, puede trabajar también para otros municipios. Interesa almacenar, además del municipio en el que está en plantilla, para qué municipios trabaja cada aparejador. Un municipio puede tener en plantilla a varios aparejadores.
+• Una vez completado el estudio de un permiso de obra, el aparejador toma como resolución la concesión o denegación del permiso. Interesa almacenar la fecha de la resolución y la propia resolución.
+
+Además de los datos indicados anteriormente se quiere guardar en la BD:
+• El tipo de inmueble, sus metros cuadrados y su dirección.
+• El nombre del municipio y la dirección y teléfono del ayuntamiento.
+• La cantidad de peticiones de obra que ha solicitado cada persona para cada inmueble.
+
+NO AÑADIR al esquema E/R INFORMACIÓN QUE NO SE HAYA MENCIONADO (como nuevos atributos, vínculos...)
+
+Universidad La Rioja, Sept 04
