@@ -1,0 +1,29 @@
+Ciutats
+codi(*) nom                     provincia  comunitat             clima
+A01     Alacant                 Alacant    Comunitat Valenciana  Mediterrani semiárid
+MU02    Cartagena               Murcia     Regió de Murcia       Mediterrani semiárid
+Cll     Fisterra                A Coruña   Galicia               Oceánic litoral
+COI     A Coruña                A Coruña   Galicia               Oceánic litoral
+OUOl    Ourense                 Ourense    Galicia               Oceánic continental
+M47     Leganés                 Madrid     Madrid                Mediterrani continental
+B91     El Prat de Llobregat    Barcelona  Catalunya             Mediterrani litoral
+
+CIUTATS(codi, nom, provincia, comunitat, clima)
+CP: codi
+
+1. Separar grups repetitius
+
+CIUTATS(codi, nom, provincia, codiComunitat, codiClima)
+COMUNITAT(codiComunitat, nomComunitat)
+CLIMA(codiClima, nomClima)
+
+2. Separar atributs que depenguen de part de la clau
+
+(No hi ha claus compostes)
+
+3. Separar atributs que depenguen d'altres atributs (no clau)
+
+CIUTATS(codiCiutat, nomCiutat, codiProvincia, codiClima)
+PROVINCIA(codiProvincia, nomProvincia, codiComunitat)
+COMUNITAT(codiComunitat, nomComunitat)
+CLIMA(codiClima, nomClima)
