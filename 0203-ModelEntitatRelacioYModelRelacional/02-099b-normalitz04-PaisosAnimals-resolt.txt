@@ -1,0 +1,52 @@
+Normalització: Animals en perill d'extinció
+
+codi(*)  codAnimal   nomAnimal      codFam  nomFam  continent       codEstat  nomEstat
+1        gue         Guepard        fel     Felins  Àfrica          vu        Vulnerable
+2        gue         Guepard        fel     Felins  Àsia            vu        Vulnerable
+3        pum         Puma           fel     Felins  Amèrica         ne        No especificat
+4        leo         Lleopard       fel     Felins  Àfrica          vu        Vulnerable
+5        leo         Lleopard       fel     Felins  Àsia            ne        No especificat
+6        pan         Panda gegant   o       Ossos   Àsia            vu        Vulnerable
+7        ta          Tapir amazònic tap     Tapirs  Amèrica         vu        Vulnerable
+8        or          Orca           ce      Cetacis No especificat  di        Dades insuficients
+
+Animals(codi, codAnimal, nomAnimal, codFam, nomFam, continent, codEstat, nomEstat)
+CP: codi
+
+0 - Clau decent
+
+Animals(codAnimal, nomAnimal, codFam, nomFam, continent, codEstat, nomEstat)
+CP: codAnimal, continent)
+
+1 - Separar grups repetitius
+
+CONTINENT(codi, nom)
+ESTAT(codi, nom)
+FAMILIA(codi, nom)
+(!!! Animal?)
+
+Animals(codAnimal, nomAnimal, codFam, codiContinent, codEstat)
+CP: (codAnimal, codiContinent)
+
+
+2 - Depén de part de la clau
+
+ANIMAL(codi, nom, codFam)
+ANIMALS_EN_PERILL(codAnimal, codiContinent, codEstat)
+CP: (codAnimal, codiContinent)
+
+
+3 - Depén d'altres atributs(no clau)
+
+ANIMALS_EN_PERILL(codAnimal, codiContinent, codEstat)
+
+Res
+
+
+Resultat
+
+CONTINENT(codi, nom)
+ESTAT(codi, nom)
+FAMILIA(codi, nom)
+ANIMAL(codi, nom, codFam)
+ANIMALS_EN_PERILL(codAnimal, codiContinent, codEstat)

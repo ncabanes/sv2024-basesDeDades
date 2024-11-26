@@ -1,0 +1,11 @@
+Normalització: Animals en perill d'extinció
+
+codi(*)  codAnimal   nomAnimal      codFam  nomFam  continent       codEstat  nomEstat
+1        gue         Guepard        fel     Felins  Àfrica          vu        Vulnerable
+2        gue         Guepard        fel     Felins  Àsia            vu        Vulnerable
+3        pum         Puma           fel     Felins  Amèrica         ne        No especificat
+4        leo         Lleopard       fel     Felins  Àfrica          vu        Vulnerable
+5        leo         Lleopard       fel     Felins  Àsia            ne        No especificat
+6        pan         Panda gegant   o       Ossos   Àsia            vu        Vulnerable
+7        ta          Tapir amazònic tap     Tapirs  Amèrica         vu        Vulnerable
+8        or          Orca           ce      Cetacis No especificat  di        Dades insuficients
