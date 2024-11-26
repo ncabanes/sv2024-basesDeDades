@@ -1,0 +1,40 @@
+PERSONA(dni, nom)
+CP: dni
+VNN: nom
+
+BOMBER(dni, dniEntrenador)
+CP: dni
+CAli: dni -> PERSONA
+CAli: dniEntrenador -> BOMBER
+
+ESPECIALITAT_BOMBER(dniBomber, detalls)
+CP: (dniBomber, detalls)
+CAli: dniBomber -> BOMBER
+
+DELINQÜENT(dni)
+CP: dni
+CAli: dni -> PERSONA
+
+INCENDI(any, número, detalls)
+CP: (any, número)
+
+PROVOCAT_PER(dniDelinquent, anyIncendi, númeroIncendi)
+CP: (dniDelinquent, anyIncendi, númeroIncendi)
+CAli: dniDelinquent -> DELINQÜENT
+CAli: anyIncendi -> INCENDI(any)
+CAli: númeroIncendi -> INCENDI(número)
+
+BRIGADA(codi, nom, dniBomber, dniBomberCap)
+CP: codi
+CAli: dniBomber -> BOMBER
+VNN: dniBomber
+CAli: dniBomberCap -> BOMBER
+CAlt: dniBomberCap
+
+PARTICIPAR(dniBomber, codiBrigada, anyIncendi, númeroIncendi)
+CP: (dniBomber, anyIncendi, númeroIncendi)
+VNN: codiBrigada
+CAli: dniBomber -> BOMBER
+CAli: codiBrigada -> BRIGADA
+CAli: anyIncendi -> INCENDI(any)
+CAli: númeroIncendi -> INCENDI(número)
