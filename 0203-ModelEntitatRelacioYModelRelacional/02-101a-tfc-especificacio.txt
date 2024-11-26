@@ -1,0 +1,23 @@
+Treballs de fi de carrera (TFC)
+
+S'ha decidit crear una BD dels TFC, que modele a alumnes que els realitzen, professors que els dirigixen, temes dels quals tracten i tribunals que els corregixen. Per tant, és d'interés:
+· Que els alumnes es definisquen pel seu número de matrícula, DNI i nom (obligatori). Un alumne realitza, evidentment, només un T.F.C.
+· Que els T.F.C. es definixen per un número d'orde, el tema (obligatori) i la data de començament. Un T.F.C. determinat, no pot ser realitzat per diversos alumnes.
+· Que un professor es definix pel seu DNI, nom i domicili; i com que els T.F.C. són de l'àrea en el qual treballa, NO interessa conéixer el T.F.C. que dirigix sinó a quin alumne li ho dirigix.
+· Que un Tribunal està format per diversos professors i els professors poden formar part de diversos tribunals. Cada tribunal avalua un únic T.F.C. i interessa saber en quina data ho ha defés. El comité es definix per un número de tribunal, lloc d'examen i pel número de components.
+· Al marge d'això, un alumne pot haver pertangut a algun grup d'investigació del qual haja sorgit la idea del T.F.C. Estos grups s'identifiquen per un número de grup i el seu nom. Un alumne no pot pertànyer a més d'un grup i no és d'interés saber si el grup té alguna relació amb el T.F.C. de l'alumne, però sí que interessa conéixer la data d'incorporació a este grup.
+· D'altra banda, un professor, al marge de dirigir el T.F.C. d'alguns alumnes, pot haver ajudat a altres alumnes en la realització del seu T.F.C. però sent un altre professor el que el dirigix. En este cas, només és interessant conéixer quin professor ha ajudat a quin alumne (a un alumne el poden ajudar diversos professors).
+
+--------------------
+
+Trabajos de fin de carrera (TFC)
+
+Se ha decidido crear una BD de los TFC, que modele a alumnos que los realizan, profesores que los dirigen, temas de los que tratan y tribunales que los corrigen. Por tanto, es de interés:
+· Que los alumnos se definan por su número de matrícula, DNI y nombre (obligatorio). Un alumno realiza, evidentemente, sólo un T.F.C.
+· Que los T.F.C. se definen por un número de orden, el tema (obligatorio) y la fecha de comienzo. Un T.F.C. determinado, no puede ser realizado por varios alumnos.
+· Que un profesor se define por su DNI, nombre y domicilio; y puesto que los T.F.C. son del área en el que trabaja, NO interesa conocer el T.F.C. que dirige sino a qué alumno se lo dirige.
+· Que un Tribunal está formado por varios profesores y los profesores pueden formar parte de varios tribunales. Cada tribunal evalúa un único T.F.C. e interesa saber en qué fecha lo ha defendido. El comité se define por un número de tribunal, lugar de examen y por el número de componentes.
+· Al margen de esto, un alumno puede haber pertenecido a algún grupo de investigación del que haya surgido la idea del T.F.C. Dichos grupos se identifican por un número de grupo y su nombre. Un alumno no puede pertenecer a más de un grupo y no es de interés saber si el grupo tiene algo que ver o no con el T.F.C. del alumno, pero sí interesa conocer la fecha de incorporación a dicho grupo.
+· Por otra parte, un profesor, al margen de dirigir el T.F.C. de algunos alumnos, puede haber ayudado a otros alumnos en la realización de su T.F.C. pero siendo otro profesor el que lo dirige. En este caso, sólo es interesante conocer qué profesor ha ayudado a qué alumno (a un alumno le pueden ayudar varios profesores).
+
+(Basado en Universidad de Chile, 2004)
