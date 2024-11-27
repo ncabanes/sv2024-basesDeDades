@@ -1,0 +1,64 @@
+Enginyeria.
+
+
+
+Volem construir una base de dades per a una empresa de projectes d'enginyeria. Es necessita guardar informació sobre tots els empleats, les seues habilitats, projectes assignats i departaments en què treballen. 
+
+
+
+Per a això es disposa de la següent informació:
+
+- Cada empleat té assignat un número únic. Es necessita el seu nom i la seua data de naixement.
+
+- En cas que un empleat estiga casat amb un altre empleat, es desitja saber amb qui i la data en què es van casar.
+
+- Cada empleat té una titulació. Ens interessen especialment els enginyers, dels quals necessitem conéixer la seua especialitat (elèctric, mecànic, etc.) i els secretaris, dels quals ens interessa el número de pulsacions per minut.
+
+- Un empleat realitza només un tipus de treball en un moment concret, per la qual cosa només necessitem informació del treball que realitza en l'actualitat. Diversos empleats poden fer el mateix treball. De cada treball volem poder emmagatzemar un codi i una descripció.
+
+- Els departaments en què es divideix l'empresa tenen un nom únic. Necessitem conéixer també el seu número de telèfon.
+
+- Cada departament pot gestionar un o diversos projectes (però potser cap). De cada projecte, que és específic d'un únic departament, ens interessa un codi numèric (numerat des d'1 en cada departament), una descripció i un cost estimat. També ens interessa saber quin empleat és el responsable del projecte (per a cada projecte ha d'existir un empleat responsable, i no permetrem que un empleat siga responsable de més d'un projecte, però pot no ser-ho de cap).
+
+- Cada empleat pertany a un sol departament, però en un departament és habitual que hi haja més d'un empleat (almenys un).
+
+- Per a equipar-se, cada departament tracta amb molts proveïdors i un proveïdor pot tractar amb més d'un departament.
+
+- Dels proveïdors es necessita conéixer el seu codi, el su nom, la seua adreça i la data de l'últim contacte amb cadascun dels departaments amb els quals tracta.
+
+(Adaptat i ampliat de UCLM)
+
+
+
+-----------
+
+
+Ingeniería.
+
+
+Queremos construir una base de datos para una empresa de proyectos de ingeniería. Se necesita guardar información sobre todos los empleados, sus habilidades, proyectos asignados y departamentos en que trabajan. 
+
+Para ello se dispone de la siguiente información:
+
+- Cada empleado tiene asignado un número único. Se necesita su nombre y su fecha de nacimiento.
+
+- En caso de que un empleado esté casado con otro empleado, se desea saber con quién y la fecha de la boda.
+
+- Cada empleado tiene una titulación. Nos interesan especialmente los ingenieros, de los que necesitamos conocer su especialidad (eléctrico, mecánico, etc.) y los secretarios, de los que nos interesa el número de pulsaciones por minuto.
+
+- Un empleado realiza sólo un tipo de trabajo en un momento dado, por lo que sólo necesitamos información del trabajo que realiza en la actualidad. Varios empleados pueden realizar el mismo trabajo. De cada trabajo queremos poder almacenar un código y una descripción.
+
+- Los departamentos en que se divide la empresa tienen un nombre único. Necesitamos conocer también su número de teléfono.
+
+- Cada departamento puede gestionar uno o varios proyectos (pero quizá ninguno). De cada proyecto, que es específico de un único departamento, nos interesa un código numérico (numerado desde 1 en cada departamento), una descripción y un coste estimado. También nos interesa saber qué empleado es el responsable del proyecto (para cada proyecto debe existir un empleado responsable, y no permitiremos que un empleado sea responsable de más de un proyecto, pero puede no serlo de ninguno).
+
+- Cada empleado pertenece a un solo departamento, pero en un departamento es habitual que haya más de un empleado (al menos uno).
+
+- Para equiparse, cada departamento trata con muchos proveedores y un proveedor puede tratar con más de un departamento.
+
+- De los proveedores se necesita conocer su código, su nombre, su dirección y la fecha del último encuentro con cada uno de los departamentos con los que trata.
+
+
+
+(Adaptado y ampliado de UCLM)
+
