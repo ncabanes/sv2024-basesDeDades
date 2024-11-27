@@ -1,0 +1,11 @@
+Empleats i caps de departament
+
+codEmpl(*)  codCap(*)    nomEmpl     nomCap   codDepart  nomDepart    dataIni    codEst  nomEstudis
+102               101    A. López    P.Pérez  ma         Marketing    05/10/2022    m    Marketing
+103               101    S. Sánchez  P.Pérez  ac         At.Client    01/11/2022    d    Dret
+104               101    M. Martínez P.Pérez  ma         Marketing    02/11/2022    a    Administració
+107               100    A.López     R. Ruiz  si         Sistemes     01/09/2022    i    Informàtica
+108               100    R.Ramírez   R. Ruiz  si         Sistemes     02/09/2022    i    Informàtica
+103                90    S. Sánchez  L.Lillo  re         Reclamacions 01/05/2022    d    Dret
+99                 90    T. Torre    L.Lillo  pr         Promocions   02/05/2022    q    Química
+
