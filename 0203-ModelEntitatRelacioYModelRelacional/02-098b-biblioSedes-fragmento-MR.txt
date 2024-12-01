@@ -1,0 +1,20 @@
+LIBRO ( código, título )
+CP: código
+
+SOCIO ( código, nombre, dirección )
+CP: código
+
+SEDE ( código, ubicación )
+CP: código
+
+EJEMPLAR ( códigoLibro, códigoEjemplar, códigoSede, estado )
+CP: (códigoLibro, códigoEjemplar)
+C.Aj.:  códigoLibro -> LIBRO(código)
+C.Aj.:  códigoSede -> SEDE(código)
+VNN: códigoSede
+
+PRÉSTAMO ( códigoLibro, códigoEjemplar, códigoSocio, fechEntrega, fechaDevolPrev, fechaDevolReal )
+CP: (códigoLibro, códigoEjemplar, códigoSocio, fechEntrega)
+C.Aj.:  códigoLibro -> EJEMPLAR(código)
+C.Aj.:  códigoEjemplar -> EJEMPLAR(código)
+C.Aj.:  códigoSocio -> SOCIO(código)
