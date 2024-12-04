@@ -1,0 +1,23 @@
+AEROPORT
+
+Es desitja crear una eina informàtica per al sistema de control de vols d'un consorci d'aeroports pertanyents a diversos països.
+A. De cada aeroport en el consorci es coneix el seu codi identificatiu internacional, nom, data d'inauguració, ciutat i país.
+B. En cada aeroport poden prendre terra diversos models d'avions (el model d'un avió determina la seua capacitat, és a dir, el seu nombre de places).
+C. Cada aeroport té assignat diversos programes de vol. En cadascun d'ells s'indica el número de vol (codi internacional identificatiu), la línia aèria que ho realitza i els dies de la setmana en els quals existeix aquest vol. És necessari incloure informació sobre el nom, país i domicili fiscal de les línies aèries.
+D. Cada programa de vol enlaira d'un aeroport del consorci i aterra en un altre.
+E. Cada vol realitzat pertany a un programa de vol. Per a cada vol es vol conéixer la seua data de realització, dia de la setmana, el model d'avió emprat i el número de places buides.
+F. Alguns programes de vol són directes mentre que uns altres incorporen escales intermèdies entre els aeroports d'eixida i d'arribada. En cada escala poden pujar-se o baixar-se passatgers de l'avió que realitza el vol corresponent. Per tant, el nombre de places buides pot variar al llarg d'un vol amb escales.
+G. De cada vol es volen conéixer les escales ordenades assignant-los a cadascuna un número d'ordre, així com la duració d'aquestes.
+
+-----
+
+Se desea crear una herramienta informática para el sistema de control de vuelos de un consorcio de aeropuertos pertenecientes a varios países.
+A. De cada aeropuerto en el consorcio se conoce su código identificativo internacional, nombre, fecha de inauguración, ciudad y país.
+B. En cada aeropuerto pueden tomar tierra diversos modelos de aviones (el modelo de un avión determina su capacidad, es decir, su número de plazas).
+C. Cada aeropuerto tiene asignado varios programas de vuelo. En cada uno de ellos se indica el número de vuelo (código internacional identificativo), la línea aérea que lo realiza y los días de la semana en los que existe dicho vuelo. Es necesario incluir información sobre el nombre, país y domicilio fiscal de las líneas aéreas.
+D. Cada programa de vuelo despega de un aeropuerto del consorcio y aterriza en otro.
+E. Cada vuelo realizado pertenece a un programa de vuelo. Para cada vuelo se quiere conocer su fecha de realización, día de la semana, el modelo de avión empleado y el número de plazas vacías.
+F. Algunos programas de vuelo son directos mientras que otros incorporan escalas intermedias entre los aeropuertos de salida y de llegada. En cada escala pueden subirse o bajarse pasajeros del avión que realiza el vuelo correspondiente. Por tanto, el número de plazas vacías puede variar a lo largo de un vuelo con escalas.
+G. De cada vuelo se quieren conocer las escalas ordenadas asignándoles a cada una un número de orden, así como la duración de éstas.
+
+Universidad de Sevilla, Universidad de Chile
