@@ -1,0 +1,57 @@
+Països, ciutats i climes
+
+CodiCiutat(*) CodiPais(*) NomCiutat    NomPais    HabC    HabP    ClimaC   DetallsClima
+M             ESP         Madrid       Espanya    3280   44446    Csa-BSk  Transició entre mediterrani típic i semiàrid fred
+CO            ARG         Córdoba      Argentina  2420   46044    Cwa      Temperat subtropical humit amb hivern sec
+CO            ESP         Córdoba      Espanya     319   44446    Csa      Hiverns suaus, estius calorosos
+A             ESP         Alacant      Espanya     338   44446    BSh      Semiàrid càlid
+DU            IRL         Dublin       Irlanda     527    5123    Cfd      Marítim
+DU            DEU         Düsseldorf   Alemanya    645   84270    Cfb      Oceànic: hiverns moderats i estius temperats
+KO            DEU         Köln         Alemanya   1073   84270    Cfb      Oceànic: hiverns moderats i estius temperats
+
+PCC(CodiCiutat, CodiPais, NomCiutat, NomPais, HabC, HabP, ClimaC, DetallsClima)
+CP(CodiCiutat, CodiPais)
+
+---------------------------------------------------
+
+1 - Separar grups repetitius
+
+PCC(CodiCiutat, CodiPais, NomCiutat, HabC, ClimaC, DetallsClima)
+CP: (CodiCiutat, CodiPais)
+
+PAÏSOS(CodiPais, NomPais, HabP)
+CP: CodiPais
+
+---------------------------------------------------
+
+2 - Separar atributs que depenguen de part de la clau
+
+PAÏSOS(CodiPais, NomPais, HabP)
+CP: CodiPais
+
+CIUTATS(CodiCiutat,NomCiutat, HabC, ClimaC, DetallsClima)
+CP: CodiCiutat
+
+PCC(CodiCiutat, CodiPais)
+CP: (CodiCiutat, CodiPais)
+
+---------------------------------------------------
+
+
+3 - Separar atributs que depenguen de altres atributs (NO clau)
+
+CIUTATS i PAÏSOS(CodiCiutat, CodiPais)
+CP: (CodiCiutat, CodiPais)
+
+PAÏSOS(CodiPais, NomPais, HabP)
+CP: CodiPais
+
+CLIMES(ClimaC, DetallsClima)
+CP: ClimaC
+
+CIUTATS(CodiCiutat,NomCiutat, HabC, ClimaC)
+CP: CodiCiutat
+
+
+
+

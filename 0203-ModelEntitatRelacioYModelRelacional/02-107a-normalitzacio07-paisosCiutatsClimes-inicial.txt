@@ -1,0 +1,10 @@
+Països, ciutats i climes
+
+CodiCiutat(*) CodiPais(*) NomCiutat    NomPais    HabC    HabP    ClimaC   DetallsClima
+M             ESP         Madrid       Espanya    3280   44446    Csa-BSk  Transició entre mediterrani típic i semiàrid fred
+CO            ARG         Córdoba      Argentina  2420   46044    Cwa      Temperat subtropical humit amb hivern sec
+CO            ESP         Córdoba      Espanya     319   44446    Csa      Hiverns suaus, estius calorosos
+A             ESP         Alacant      Espanya     338   44446    BSh      Semiàrid càlid
+DU            IRL         Dublin       Irlanda     527    5123    Cfd      Marítim
+DU            DEU         Düsseldorf   Alemanya    645   84270    Cfb      Oceànic: hiverns moderats i estius temperats
+KO            DEU         Köln         Alemanya   1073   84270    Cfb      Oceànic: hiverns moderats i estius temperats
