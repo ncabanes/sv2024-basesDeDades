@@ -1,0 +1,53 @@
+VENDA
+numVenda  numLinia  data        codClient  nomClient   codArticle  nomArticle        quantitat  preu
+1         1         2022/10/04  101        Nacho C.    1001        WD Elements 5TB     1         109
+1         2         2022/10/04  101        Nacho C.    1010        CT500 SSD           2          69
+1         3         2022/10/04  101        Nacho C.    1031        Corsair K70 MK.2    1         169
+2         1         2022/10/05  105        Javier I.   1001        WD Elements 5TB     2         109
+2         2         2022/10/05  105        Javier I.   1031        Corsair K70 MK.2    1         169
+3         1         2022/10/06  103        Pablo G.    1010        CT500 SSD           1          69
+3         2         2022/10/06  103        Pablo G.    1001        WD Elements 5TB     1         109
+CP: (numVenda, numLinia)
+
+Taula "vendes":
+
+VENDA(numVenda  numLinia, data, codClient, nomClient, codArticle, nomArticle, quantitat, preu)
+CP: (numVenda, numLinia)
+
+--------------------
+
+1 - Separar grups repetitius
+
+No veig res!!!! XD
+
+VENDA(numVenda  numLinia, data, codClient, nomClient, codArticle, nomArticle, quantitat, preu)
+CP: (numVenda, numLinia)
+
+
+--------------------
+
+2 - Separar atributs que depenguen de part de la clau
+
+
+VENDA(numVenda, data, codClient, nomClient)
+CP: (numVenda)
+
+RESTA(numVenda, numLinia, codArticle, nomArticle, quantitat, preu)
+CP: (numVenda, numLinia)
+
+--------------------
+
+3 - Separar atributs que depenguen de altres NO clau
+
+
+CLIENT(codClient, nomClient)
+CP: codClient
+
+VENDA(numVenda, data, codClient)
+CP: numVenda
+
+ARTICLE(codArticle, nomArticle, preu)
+CP: codArticle
+
+LINIA_VENDA(numVenda, numLinia, codArticle, quantitat)
+CP: (numVenda, numLinia)
