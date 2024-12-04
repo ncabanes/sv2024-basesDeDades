@@ -1,0 +1,63 @@
+K( k1, k2)
+CP: k1
+
+-----
+
+A(a1, a2, a3)
+CP: (a1, a2)
+
+G(a1, a2)
+CP: (a1, a2)
+C.Aj: a1 -> A(a1)
+C.Aj: a2 -> A(a2)
+
+F(a1, a2, f1)
+CP: (a1, a2)
+C.Aj: a1 -> A(a1)
+C.Aj: a2 -> A(a2)
+VNN: f1
+
+-----
+
+C(c1)
+CP: c1
+
+C_C2(c1, c3, c4)
+CP(c1,c3)
+c.Aj.: c1 -> C(c1)
+
+-----
+
+R3(c1a,c1b,r3a)
+CP: (c1a,c1b,r3a)
+c.Aj.: c1a -> C(c1)
+c.Aj.: c1b -> C(c1)
+
+-----
+
+B_D_R2(d1, b1, b2, r2a)
+CP: b1
+C.Alt: d1
+
+-----
+
+R1(b1, c1, a1, a2)
+CP: (c1, a1, a2)
+C.Alt: (c1, b1)
+C.Aj.: c1 -> C(c1)
+C.Aj.: b1 -> B_D_R2(b1)
+C.Aj.: a1 -> A(a1)
+C.Aj.: a2 -> A(a2)
+
+-----
+
+H( h1, h2)
+CP: ( h1, h2)
+
+R4(a1, a2, h1, h2, k1)
+CP: (a1, a2, h1, h2)
+C.Aj: a1 -> G(a1)
+C.Aj: a2 -> G(a2)
+C.Aj: h1 -> H(h1)
+C.Aj: h2 -> H(h2)
+C.Aj: k1 -> K(k1)
