@@ -1,0 +1,10 @@
+Mags
+Conjur      CodDe  NomDe     CasaDe      CodA  NomA      CasaA        Resultat
+Petrificus  H      Harrison  Aixeta d'or   E   Herminia  Aixeta d'or  Repel·lit
+Petrificus  E      Herminia  Aixeta d'or   H   Harrison  Aixeta d'or  Congelat
+Petrificus  E      Herminia  Aixeta d'or   V   Vicent    Serp         Congelat
+Ridiculus   D      Daniel    Serp          R   Ronaldo   Aixeta d'or  Avergonyit
+Ridiculus   D      Daniel    Serp          E   Herminia  Aixeta d'or  Repel·lit
+MaxLuminus  A      Alfredo   Arpa de corb  E   Herminia  Aixeta d'or  Encegat
+
+CP: Conjur, CodDe, CodA
