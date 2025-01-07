@@ -15,8 +15,7 @@ CREATE TABLE exercicis
     assignatura VARCHAR(25),
     categoria VARCHAR(20),
     dificultat NUMERIC(2)
-)
-
+);
 
 
 -- Afegir diverses dades d'exemple. Introduïx almenys un en un orde que no siga
@@ -31,12 +30,42 @@ INSERT INTO exercicis VALUES(105,'NORMALITZACIO','Bases de dades','normalitzacio
 INSERT INTO exercicis (descripcio,assignatura,categoria,dificultat,codi) 
     VALUES('SQL-INSERT','Bases de dades','SQL',7,106);
 
+INSERT INTO exercicis VALUES
+(204,'Funcions','Programació','Pro',7);
+
 -- Mostrar:
 -- Totes les dades.
+
+SELECT * FROM exercicis;
+
 -- Les dades de l'assignatura "Bases de dades".
--- Les dades de l'assignatura "Bases de dades" amb una dificultat de 6 o superior.
--- Les dades de l'assignatura "Bases de dades" amb una dificultat entre 6 i 8 (de dos formes distintes).
+
+SELECT * FROM exercicis WHERE assignatura = 'Bases de dades';
+
+-- Les dades de l'assignatura "Bases de dades" 
+-- amb una dificultat de 6 o superior.
+
+SELECT * FROM exercicis 
+WHERE assignatura = 'Bases de dades' AND dificultat >= 6;
+
+-- Les dades de l'assignatura "Bases de dades" amb una dificultat 
+-- entre 6 i 8 (de dos formes distintes).
+
+SELECT * FROM exercicis WHERE assignatura = 'Bases de dades' 
+AND dificultat BETWEEN 6 AND 8;
+
+SELECT * FROM exercicis WHERE assignatura = 'Bases de dades' 
+AND dificultat >= 6 AND dificultat <= 8;
+
 -- Les dades de l'assignatura "Bases de dades" amb una dificultat de 6 o de 7.
+
+SELECT * FROM exercicis WHERE assignatura = 'Bases de Datos' 
+AND (dificultat = 6 OR dificultat = 7);
+
 -- Les dades que continguen la paraula "SELECT" en la seua descripció.
+
+SELECT * FROM exercicis WHERE descripcio LIKE '%SELECT%';
+
 -- Les dades per als quals no coneguem la dificultat.
 
+SELECT * FROM exercicis WHERE dificultat IS NULL;
