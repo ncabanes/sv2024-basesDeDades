@@ -1,58 +1,165 @@
--- 1. Nom de les ciutats que continguen la seqüència de lletres "san", potser amb majúscules distintes (per exemple "Santa Fe"), ordenades.
+-- 1. Nom de les ciutats que continguen la seqüència de lletres "san", potser 
+-- amb majúscules distintes (per exemple "Santa Fe"), ordenades.
+
+SELECT name FROM city WHERE LOWER(name) LIKE '%san%' ORDER BY name;
 
 
+-- 2. Nom de les ciutats que continguen una "i" després d'una "e", i 
+-- esta després d'una "a" (per exemple, "Berazategui").
 
--- 2. Nom de les ciutats que continguen una "i" després d'una "e", i esta després d'una "a" (per exemple, "Berazategui").
-
-
-
--- 3. Nom de la ciutat i nom del país, per a les ciutats que tinguen entre 900.000 habitants i un milió d'habitants (de formes distintes).
+SELECT name FROM city WHERE name LIKE '%a%e%i%' ORDER BY name;
 
 
+-- 3. Nom de la ciutat i nom del país, per a les ciutats que tinguen 
+-- entre 900.000 habitants i un milió d'habitants (de 2 formes distintes).
 
--- 4. Nom de cada ciutat i nom del país al qual pertany, ordenat per ciutat i, en cas que dos ciutats s'anomenen igual, per nom del país.
+SELECT city.name AS CityName, country.name AS CountryName 
+FROM city JOIN country ON city.CountryCode = country.Code 
+WHERE city.Population BETWEEN 900000 AND 1000000;
 
-
-
--- 5. Nom dels països dels quals no tenim cap ciutat, ordenats per població de manera descendent.
-
-
-
--- 6. Països el nom dels quals coincidix amb el d'una ciutat (repte: seràs capaç d'aconseguir-ho d'almenys quatre formes distintes?).
-
-
-
--- 7. Nom de cada país al costat del nom de la seua capital (el codi apareix en el camp "Capital"), si la capital apareix en la nostra base de dades, ordenat per país.
+SELECT city.name AS CityName, country.name AS CountryName 
+FROM city JOIN country ON city.CountryCode = country.Code 
+WHERE city.Population >= 900000 AND city.Population <= 1000000;
 
 
+-- 4. Nom de cada ciutat i nom del país al qual pertany, ordenat per ciutat i, 
+-- en cas que dos ciutats s'anomenen igual, per nom del país.
 
--- 8. País, capital i governant, per als països el governant dels quals sapiem, ordenat per país.
+SELECT city.name AS CityName, country.name AS CountryName 
+FROM city JOIN country ON city.CountryCode = country.Code 
+ORDER BY CityName, CountryName;
 
 
+-- 5. Nom dels països dels quals no tenim cap ciutat, 
+-- ordenats per població de manera descendent.
 
--- 9. Capitals i noms de països, el producte interior brut (GNP) dels quals siga superior a la mitjana dels d'Europa.
+SELECT country.name 
+FROM country LEFT JOIN city 
+    ON country.Code = city.CountryCode 
+WHERE city.ID IS NULL 
+ORDER BY country.Population DESC;
+
+SELECT name 
+FROM country
+WHERE country.Code NOT IN
+(
+    SELECT CountryCode 
+    FROM city
+);
+
+SELECT name 
+FROM country
+WHERE country.Code <> ALL
+(
+    SELECT CountryCode 
+    FROM city
+);
 
 
+-- 6. Països el nom dels quals coincidix amb el d'una ciutat 
+-- (repte: seràs capaç d'aconseguir-ho d'almenys quatre formes distintes?).
 
--- 10. Per a cada país: nom, població i suma de les poblacions de les ciutats que coneixem d'eixe país.
+-- Forma 1: Enllaçant amb JOIN
 
+SELECT country.name 
+FROM country JOIN city ON country.name = city.name; 
+
+-- Forma 2: Enllaçant amb WHERE
+
+SELECT country.name 
+FROM country, city 
+WHERE country.name = city.name; 
+
+-- Forma 3: IN 
+
+SELECT name 
+FROM country 
+WHERE name IN (SELECT name FROM city); 
+
+-- Forma 4: ANY (No en SQLite)
+
+SELECT name 
+FROM country 
+WHERE name = ANY (SELECT name FROM city); 
+
+-- Forma 5: EXISTS
+ 
+SELECT name FROM country WHERE EXISTS 
+(
+    SELECT 'Hola' FROM city WHERE city.name = country.name
+);
+
+
+-- 7. Nom de cada país al costat del nom de la seua capital 
+-- (el codi apareix en el camp "Capital"), si la capital 
+-- apareix en la nostra base de dades, ordenat per país.
+
+SELECT country.name AS CountryName, city.name AS CapitalName 
+FROM country JOIN city ON country.Capital = city.ID 
+ORDER BY CountryName;
+
+
+-- 8. País, capital i governant, per als països el governant 
+-- dels quals sapiem, ordenat per país.
+
+SELECT country.name AS CountryName, city.name AS CapitalName, country.HeadOfState 
+FROM country JOIN city ON country.Capital = city.ID 
+WHERE country.HeadOfState IS NOT NULL 
+ORDER BY CountryName;
+
+
+-- 9. Capitals i noms de països, el producte interior brut (GNP) 
+-- dels quals siga superior a la mitjana dels d'Europa.
+
+SELECT country.name AS CountryName, city.name AS CapitalName 
+FROM country JOIN city ON country.capital = city.ID 
+WHERE country.GNP > 
+(
+    SELECT AVG(GNP) 
+    FROM country 
+    WHERE continent = 'Europe'
+);
+
+
+-- 10. Per a cada país: nom, població i suma de les poblacions 
+-- de les ciutats que coneixem d'eixe país.
+
+SELECT country.name AS CountryName, 
+    country.Population AS CountryPopulation, 
+    SUM(city.Population) AS TotalCityPopulation 
+FROM country LEFT JOIN city ON country.code = city.countryCode 
+GROUP BY country.Name;
 
 
 -- 11. Països, la població dels quals és menys de la mitat de la ciutat més poblada de tota la base de dades.
 
+SELECT name 
+FROM country 
+WHERE population < (SELECT MAX(population) / 2 FROM city);
 
 
 -- 12. Capitals que tinguen la mitat (o més) de la població del seu país.
 
+SELECT city.name AS CapitalName 
+FROM city JOIN country 
+ON city.id = country.capital 
+WHERE city.population >= country.population / 2;
 
 
 -- 13. Ciutats el nom de les quals està repetit.
 
+SELECT name FROM city GROUP BY name HAVING COUNT(*) > 1;
 
 
 -- 14. Nom dels països que tenen ciutats el nom de les quals està repetit.
 
-
+SELECT DISTINCT country.name 
+FROM country JOIN city 
+    ON country.Code = city.CountryCode 
+WHERE city.name IN 
+( 
+    SELECT name FROM city GROUP BY name HAVING COUNT(*) > 1
+);
 
 
 
