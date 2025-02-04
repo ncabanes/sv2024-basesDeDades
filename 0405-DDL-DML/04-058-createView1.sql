@@ -1,3 +1,8 @@
+-- Crea una vista v_ciutats_paisos que mostre el nom de cada ciutat 
+-- al costat del nom del país al qual pertany.
+
+-- Primera idea (precaució: col·lisió de noms)
+
 CREATE VIEW v_ciutats_paisos AS
 SELECT city.name, country.name 
 FROM city JOIN country
