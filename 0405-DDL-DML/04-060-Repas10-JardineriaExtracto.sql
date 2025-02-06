@@ -1,5 +1,5 @@
--- Extracto (retocado) de:
--- https://gist.githubusercontent.com/josejuansanchez/c408725e848afd64dd9a20ab37fba8c9/raw/94f317604fda43e5dc7b5e859be82307c62c4488/jardineria.sql
+-- Inspirado en:
+-- https://josejuansanchez.org/bd/ejercicios-consultas-sql/index.html#jardiner%C3%ADa
 
 CREATE TABLE oficina (
   codigo_oficina VARCHAR(10) NOT NULL,
@@ -53,3 +53,73 @@ INSERT INTO empleado VALUES (18,'Michael','Sydney','SFC-USA',3,'Director');
 INSERT INTO empleado VALUES (19,'Walter Santiago','Castillo','SFC-USA',18,'Representante');
 INSERT INTO empleado VALUES (20,'Hilary','Washington','BOS-USA',3,'Director');
 INSERT INTO empleado VALUES (21,'Marcus','Paxton','BOS-USA',20,'Representante');
+
+
+-- 1. Devuelve el puesto, nombre, apellido y ciudad en la que trabaja el empleado 1, empleando INNER JOIN.
+
+-- 2. Devuelve el puesto, nombre, apellido y ciudad en la que trabaja el empleado 1, empleando WHERE.
+
+-- 3. Nombre de cada puesto y cantidad de empleados que ocupan ese puesto, ordenado alfabéticamente.
+
+-- 4. Nombre de cada ciudad y cantidad de empleados que trabajan en ella (quizá 0), ordenado de mayor a menor cantidad de empleados, y en caso de coincidir esta, por nombre de ciudad (de al A a la Z)..
+
+-- 5. Nombre y apellido de los empleados cuyo código está entre el 10 y el 20, y cuyo puesto además contiene el fragmento "repre" (quizá con mayúsculas distintas).
+
+-- 6. Nombre y apellido de los empleados, cuyo apellido coincida con el nombre de una ciudad, usando IN o NOT IN.
+
+-- 7. Nombre y apellido de los empleados, cuyo apellido coincida con el nombre de una ciudad, usando ANY o ALL.
+
+-- 8. Nombre y apellido de los empleados, cuyo apellido coincida con el nombre de una ciudad, usando EXISTS o NOT EXISTS.
+
+-- 9. Nombre y apellido de los empleados, cuyo apellido coincida con el nombre de una ciudad, usando INNER JOIN.
+
+-- 10, 11, 12. Nombre de las ciudades en las que aún no nos aparezcan ningún empleado, de 3 formas distintas.
+
+-- 13. Nombre y apellido de cada empleado, junto con el nombre de la ciudad, usando NATURAL JOIN.
+
+-- 14. Nombre (y apellido) de cada empleado junto con el nombre (y apellido) de su jefe, si existe.
+
+-- 15. Nombre (y apellido) de cada empleado junto con el nombre (y apellido) de su jefe, si existe, y el nombre (y apellido) del jefe de su jefe, si existe.
+
+-- 16. Nombre de los países en los que trabajen al menos 5 personas.
+
+-- 17. Cantidad media de empleados que trabajan en cada ciudad (aproximación, dividiendo la cantidad de empleados entre la cantidad de oficinas en que trabajan).
+
+-- 18. Ciudad y país de las dos oficinas con más empleados.
+
+-- 19. Nombre de la ciudad en la que está la oficina que tiene la valoración más alta, con una subconsulta y MAX.
+
+-- 20. Nombre de la ciudad en la que está la oficina que tiene la valoración más alta, con una subconsulta y EXISTS o NOT EXISTS.
+
+-- 21. Nombre de la ciudad en la que está la oficina que tiene la valoración más alta, con una subconsulta y ALL o ANY
+
+-- 22. Nombre de la ciudad en la que está la oficina que tiene la valoración más alta, con LIMIT.
+
+-- 23. Código y ciudad de las oficinas que están en el mismo país que la oficina que tiene la valoración más alta.
+
+-- 23. Código y ciudad de las oficinas que tengan la misma valoración que alguna otra.
+
+-- 24. Código y ciudad de las oficinas cuya valoración esté por encima de la media de su país.
+
+-- 25. Crea una vista "v_empleados" que, para cada empleado, muestre su nombre, la ciudad de la oficina y el país de la oficina.
+
+-- 26. Cantidad de empleados que trabajan en cada ciudad, empleando la vista "v_empleados".
+
+-- 27. Ciudad y país de las dos oficinas con más empleados, empleando la vista "v_empleados".
+
+-- 28. Crea una tabla de "productos". Para cada producto querremos un código (5 letras), una descripción (hasta 50 letras), un importe (5 cifras a la izquierda de la coma decimal y 2 a su derecha) y una fecha de alta. El código actuará como clave primaria. Usa sintaxis de Oracle.
+
+-- 29. Añade a la tabla de productos la restricción de que la descripción debe ser única.
+
+-- 30. Añade 3 datos de ejemplo en la tabla de productos. Para uno indicarás todos los campos, para otro no indicarás la fecha ayudándote de NULL y para el tercero no indicarás la fecha porque no detallarás todos los nombres de los campos.
+
+-- 31. Borra el tercer dato de ejemplo que has añadido en la tabla de productos, a partir de su código.
+
+-- 32. Modifica el segundo dato de ejemplo que has añadido en la tabla de productos, a partir de su código, para que su fecha de alta sea la de hoy.
+
+-- 33. Crea una tabla "backup_productos", volcando en ella el código la descripción y el importe de los datos que hay en la tabla de productos.
+
+-- 34. Vacía la tabla de productos, conservando su estructura.
+
+-- 35. Elimina la tabla de productos.
+
