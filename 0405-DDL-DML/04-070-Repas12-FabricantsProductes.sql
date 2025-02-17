@@ -38,62 +38,94 @@ INSERT INTO productos VALUES(9, 'Portátil Ideapd 320', 444, 2);
 INSERT INTO productos VALUES(10, 'Impresora HP Deskjet 3720', 59.99, 3);
 INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 
+
 -- 1.Lista el nombre de todos los productos que hay en la tabla producto.
+
+SELECT nombre FROM productos;
 
 
 -- 2.Lista los nombres y los precios de todos los productos de la tabla producto.
 
+SELECT nombre, precio FROM productos;
+
 
 -- 3.Lista todas las columnas de la tabla producto.
+
+SELECT * FROM productos;
 
 
 -- 4.Lista el nombre de los productos, el precio en euros y el precio en 
 -- dólares estadounidenses (USD).
+
+SELECT nombre, precio, precio*1.05 FROM productos;
 
 
 -- 5.Lista el nombre de los productos, el precio en euros y el precio en 
 -- dólares estadounidenses (USD). Utiliza los siguientes alias para las columnas: 
 -- nombre de producto, euros, dólares.
 
+SELECT nombre, precio AS euros, precio*1.05 AS dolares FROM productos;
+
 
 -- 6.Lista los nombres y los precios de todos los productos de la tabla 
 -- producto, convirtiendo los nombres a mayúscula.
+
+SELECT UPPER(nombre), precio FROM productos;
 
 
 -- 7.Lista los nombres y los precios de todos los productos de la tabla 
 -- producto, convirtiendo los nombres a minúscula.
 
+SELECT LOWER(nombre), precio FROM productos;
+
 
 -- 8.Lista el nombre de todos los fabricantes en una columna, y en otra columna 
 -- obtenga en mayúsculas los dos primeros caracteres del nombre del fabricante.
 
+SELECT nombre, SUBSTR(UPPER(nombre),1,2) FROM productos;
+
 
 -- 9.Lista los nombres y los precios de todos los productos de la tabla 
 -- producto, redondeando el valor del precio.
+
+SELECT nombre, ROUND(precio) FROM productos;
 
 
 -- 10.Lista los nombres y los precios de todos los productos de la tabla 
 -- producto, truncando el valor del precio para mostrarlo sin ninguna cifra 
 -- decimal.
 
+SELECT nombre, TRUNC(precio) FROM productos;
+
 
 -- 11.Lista el identificador de los fabricantes que tienen productos en la 
 -- tabla producto.
+
+SELECT id_fabricante FROM productos;
 
 
 -- 12.Lista el identificador de los fabricantes que tienen productos en la 
 -- tabla producto, eliminando los identificadores que aparecen repetidos.
 
+SELECT DISTINCT id_fabricante FROM productos;
+
 
 -- 13.Lista los nombres de los fabricantes ordenados de forma ascendente.
 
+SELECT nombre FROM fabricantes ORDER BY nombre;
+
 
 -- 14.Lista los nombres de los fabricantes ordenados de forma descendente.
+
+SELECT nombre FROM fabricantes ORDER BY nombre DESC;
 
 
 -- 15.Lista los nombres de los productos ordenados en primer lugar por el 
 -- nombre de forma ascendente y en segundo lugar por el precio de forma 
 -- descendente.
+
+SELECT nombre FROM productos 
+ORDER BY nombre ASC, precio DESC;
 
 
 -- 16.Devuelve una lista con las 5 primeras filas de la tabla fabricante.
@@ -235,7 +267,6 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 -- Consultas multitabla (Composición externa) -------------------------------
 -- Resuelva todas las consultas utilizando las cláusulas LEFT JOIN y RIGHT JOIN.
 
-
 -- 50.Devuelve un listado de todos los fabricantes que existen en la base de 
 -- datos, junto con los productos que tiene cada uno de ellos. El listado deberá 
 -- mostrar también aquellos fabricantes que no tienen productos asociados.
@@ -253,48 +284,119 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 
 -- 53. Calcula el número total de productos que hay en la tabla productos.
 
+SELECT COUNT(*) FROM productos;
+
 
 -- 54. Calcula el número total de fabricantes que hay en la tabla fabricante.
+
+SELECT COUNT(*) FROM fabricantes;
 
 
 -- 55. Calcula el número de valores distintos de identificador de fabricante aparecen en la tabla productos.
 
-    
+SELECT COUNT(DISTINCT id_fabricante) FROM productos;
+
+
 -- 56. Calcula la media del precio de todos los productos.
+
+SELECT AVG(precio) FROM productos;
 
 
 -- 57. Calcula el precio más barato de todos los productos.
 
+SELECT MIN(precio) FROM productos;
+
 
 -- 58. Calcula el precio más caro de todos los productos.
+
+SELECT MAX(precio) FROM productos;
 
 
 -- 59. Lista el nombre y el precio del producto más barato.
 
+-- SQLite
+
+SELECT nombre, precio FROM productos
+ORDER BY precio LIMIT 1;
+
+-- Oracle
+
+SELECT nombre, precio FROM productos
+ORDER BY precio FETCH NEXT 1 ROWS ONLY;
+
 
 -- 60. Lista el nombre y el precio del producto más caro.
+
+-- SQLite
+
+SELECT nombre, precio FROM productos
+ORDER BY precio DESC LIMIT 1;
+
+-- Oracle
+
+SELECT nombre, precio FROM productos
+ORDER BY precio DESC FETCH NEXT 1 ROWS ONLY;
 
 
 -- 61. Calcula la suma de los precios de todos los productos.
 
+SELECT SUM(precio) FROM productos;
+
 
 -- 62. Calcula el número de productos que tiene el fabricante Asus.
+
+-- Terrible
+
+SELECT COUNT(*) FROM productos
+WHERE id_fabricante = 1;
+
+-- Bien
+
+SELECT COUNT(*) 
+FROM productos JOIN fabricantes
+ON productos.id_fabricante = fabricantes.id
+WHERE fabricantes.nombre = 'Asus';
 
 
 -- 63. Calcula la media del precio de todos los productos del fabricante Asus.
 
+SELECT AVG(precio) 
+FROM productos JOIN fabricantes
+ON productos.id_fabricante = fabricantes.id
+WHERE fabricantes.nombre = 'Asus';
+
 
 -- 64. Calcula el precio más barato de todos los productos del fabricante Asus.
+
+SELECT MIN(precio) 
+FROM productos JOIN fabricantes
+ON productos.id_fabricante = fabricantes.id
+WHERE fabricantes.nombre = 'Asus';
 
 
 -- 65. Calcula el precio más caro de todos los productos del fabricante Asus.
 
+SELECT MAX(precio) 
+FROM productos JOIN fabricantes
+ON productos.id_fabricante = fabricantes.id
+WHERE fabricantes.nombre = 'Asus';
+
 
 -- 66. Calcula la suma de todos los productos del fabricante Asus.
+
+SELECT SUM(precio) 
+FROM productos JOIN fabricantes
+ON productos.id_fabricante = fabricantes.id
+WHERE fabricantes.nombre = 'Asus';
 
 
 -- 67. Muestra el precio máximo, precio mínimo, precio medio y el número total 
 -- de productos que tiene el fabricante Crucial.
+
+SELECT MAX(precio), MIN(precio), AVG(precio), COUNT(*)
+FROM productos JOIN fabricantes
+ON productos.id_fabricante = fabricantes.id
+WHERE fabricantes.nombre = 'Crucial';
 
 
 -- 68. Muestra el número total de productos que tiene cada uno de los 
@@ -303,10 +405,27 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 -- fabricante y otra con el número de productos que tiene. Ordene el resultado 
 -- descendentemente por el número de productos.
 
+SELECT fabricantes.nombre, COUNT(productos.id)
+FROM fabricantes LEFT JOIN productos
+ON productos.id_fabricante = fabricantes.id
+GROUP BY fabricantes.nombre
+ORDER BY COUNT(productos.id) DESC;
+
+SELECT f.nombre, COUNT(p.id)
+FROM fabricantes f LEFT JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre
+ORDER BY COUNT(p.id) DESC;
+
 
 -- 69. Muestra el precio máximo, precio mínimo y precio medio de los productos 
 -- de cada uno de los fabricantes. El resultado mostrará el nombre del fabricante 
 -- junto con los datos que se solicitan.
+
+SELECT f.nombre, MAX(precio), MIN(precio), AVG(precio)
+FROM fabricantes f LEFT JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre;
 
 
 -- 70. Muestra el precio máximo, precio mínimo, precio medio y el número total 
@@ -314,34 +433,106 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 -- es necesario mostrar el nombre del fabricante, con el identificador del 
 -- fabricante es suficiente.
 
+-- Partiendo de la anterior
+
+SELECT f.id, MAX(precio), MIN(precio), 
+    AVG(precio), COUNT(p.id)
+FROM fabricantes f LEFT JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.id
+HAVING AVG(precio) > 200;
+
+-- Simplificado
+
+SELECT p.id_fabricante, MAX(precio), MIN(precio), 
+    AVG(precio), COUNT(p.id)
+FROM productos p
+GROUP BY p.id_fabricante
+HAVING AVG(precio) > 200;
+
 
 -- 71. Muestra el nombre de cada fabricante, junto con el precio máximo, precio 
 -- mínimo, precio medio y el número total de productos de los fabricantes que 
 -- tienen un precio medio superior a 200€. Es necesario mostrar el nombre del 
 -- fabricante.
 
+SELECT f.nombre, MAX(precio), MIN(precio), 
+    AVG(precio), COUNT(p.id)
+FROM fabricantes f LEFT JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre
+HAVING AVG(precio) > 200;
+
 
 -- 72. Calcula el número de productos que tienen un precio mayor o igual a 180€.
+
+SELECT COUNT(*) FROM productos
+WHERE precio >= 180;
 
 
 -- 73. Calcula el número de productos que tiene cada fabricante con un precio 
 -- mayor o igual a 180€.
 
+SELECT id_fabricante, COUNT(*) FROM productos
+WHERE precio >= 180
+GROUP BY id_fabricante;
+
 
 -- 74. Lista el precio medio los productos de cada fabricante, mostrando 
 -- solamente el identificador del fabricante.
+
+SELECT p.id_fabricante, AVG(precio)
+FROM productos p
+GROUP BY p.id_fabricante;
 
 
 -- 75. Lista el precio medio los productos de cada fabricante, mostrando 
 -- solamente el nombre del fabricante.
 
+SELECT f.nombre, AVG(precio)
+FROM fabricantes f LEFT JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre;
+
 
 -- 76. Lista los nombres de los fabricantes cuyos productos tienen un precio 
 -- medio mayor o igual a 150€.
 
+-- Prueba previa
+
+SELECT f.nombre, AVG(precio)
+FROM fabricantes f LEFT JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre
+HAVING AVG(precio) >= 150;
+
+-- Solución
+
+SELECT f.nombre
+FROM fabricantes f LEFT JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre
+HAVING AVG(precio) >= 150;
+
 
 -- 77. Devuelve un listado con los nombres de los fabricantes que tienen 2 o 
 -- más productos.
+
+-- Prueba previa
+
+SELECT f.nombre, COUNT(*)
+FROM fabricantes f INNER JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre
+HAVING COUNT(*) >= 2;
+
+-- Solución
+
+SELECT f.nombre
+FROM fabricantes f INNER JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre
+HAVING COUNT(*) >= 2;
 
 
 -- 78. Devuelve un listado con los nombres de los fabricantes y el número de 
@@ -354,6 +545,12 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 -- Lenovo   2
 -- Asus     1
 -- Crucial  1
+
+SELECT f.nombre, COUNT(*)
+FROM fabricantes f INNER JOIN productos p
+ON p.id_fabricante = f.id
+WHERE precio >= 220
+GROUP BY f.nombre;
 
 
 -- 79. Devuelve un listado con los nombres de los fabricantes y el número de 
@@ -374,9 +571,22 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 -- Xiaomi           0
 -- Seagate          0
 
+SELECT f.nombre, COUNT(p.id) AS total
+FROM fabricantes f LEFT JOIN productos p
+ON f.id = p.id_fabricante
+AND p.precio >= 220
+GROUP BY f.nombre
+ORDER BY total DESC;
+
 
 -- 80. Devuelve un listado con los nombres de los fabricantes donde la suma del 
 -- precio de todos sus productos es superior a 1000 €.
+
+SELECT f.nombre, SUM(precio)
+FROM fabricantes f INNER JOIN productos p
+ON p.id_fabricante = f.id
+GROUP BY f.nombre
+HAVING SUM(precio) > 1000;
 
 
 -- 81. Devuelve un listado con el nombre del producto más caro que tiene cada 
@@ -391,19 +601,81 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 -- 82. Devuelve todos los productos del fabricante Lenovo. (Sin utilizar INNER 
 -- JOIN).
 
+SELECT * FROM productos 
+WHERE id_fabricante =
+(
+    SELECT id FROM fabricantes
+    WHERE nombre = 'Lenovo'
+);
+
 
 -- 83. Devuelve todos los datos de los productos que tienen el mismo precio que 
 -- el producto más caro del fabricante Lenovo. (Sin utilizar INNER JOIN).
 
+SELECT * FROM productos 
+WHERE precio =
+(
+    SELECT MAX(precio) FROM productos
+    WHERE id_fabricante = 
+    (
+        SELECT id FROM fabricantes
+        WHERE nombre = 'Lenovo'
+    )
+);
+
 
 -- 84. Lista el nombre del producto más caro del fabricante Lenovo.
+
+SELECT nombre FROM productos 
+WHERE precio =
+(
+    SELECT MAX(precio) FROM productos
+    WHERE id_fabricante = 
+    (
+        SELECT id FROM fabricantes
+        WHERE nombre = 'Lenovo'
+    )
+)
+AND id_fabricante = 
+(
+    SELECT id FROM fabricantes
+    WHERE nombre = 'Lenovo'
+);
 
 
 -- 85. Lista el nombre del producto más barato del fabricante Hewlett-Packard.
 
+-- Sin subconsulta
+
+SELECT p.nombre, precio
+FROM fabricantes f INNER JOIN productos p
+ON p.id_fabricante = f.id
+WHERE f.nombre = 'Hewlett-Packard'
+ORDER BY precio LIMIT 1;
+
+-- Con subconsulta
+
+SELECT nombre FROM productos 
+WHERE precio =
+(
+    SELECT MIN(precio) FROM productos
+    WHERE id_fabricante = 
+    (
+        SELECT id FROM fabricantes
+        WHERE nombre = 'Hewlett-Packard'
+    )
+)
+AND id_fabricante = 
+(
+    SELECT id FROM fabricantes
+    WHERE nombre = 'Hewlett-Packard'
+);
+
 
 -- 86. Devuelve todos los productos de la base de datos que tienen un precio 
 -- mayor o igual al producto más caro del fabricante Lenovo.
+
+
 
 
 -- 87. Lista todos los productos del fabricante Asus que tienen un precio 
@@ -415,37 +687,84 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 -- 88. Devuelve el producto más caro que existe en la tabla producto sin hacer 
 -- uso de MAX, ORDER BY ni LIMIT.
 
+SELECT * FROM productos
+WHERE precio >= ALL
+(
+    SELECT precio FROM productos
+);
 
 -- 89. Devuelve el producto más barato que existe en la tabla producto sin 
 -- hacer uso de MIN, ORDER BY ni LIMIT.
 
+SELECT * FROM productos
+WHERE precio <= ALL
+(
+    SELECT precio FROM productos
+);
+
 -- 90. Devuelve los nombres de los fabricantes que tienen productos asociados. 
 -- (Utilizando ALL o ANY).
+
+SELECT nombre FROM fabricantes
+WHERE id = ANY
+(
+    SELECT id_fabricante FROM productos
+);
 
 
 -- 91. Devuelve los nombres de los fabricantes que no tienen productos 
 -- asociados. (Utilizando ALL o ANY).
 
 
+SELECT nombre FROM fabricantes
+WHERE id <> ALL
+(
+    SELECT id_fabricante FROM productos
+);
+
 -- Subconsultas con IN y NOT IN
 
 -- 92. Devuelve los nombres de los fabricantes que tienen productos asociados. 
 -- (Utilizando IN o NOT IN).
 
+SELECT nombre FROM fabricantes
+WHERE id IN
+(
+    SELECT id_fabricante FROM productos
+);
+
 
 -- 93. Devuelve los nombres de los fabricantes que no tienen productos 
 -- asociados. (Utilizando IN o NOT IN).
 
+SELECT nombre FROM fabricantes
+WHERE id NOT IN
+(
+    SELECT id_fabricante FROM productos
+);
 
 -- Subconsultas con EXISTS y NOT EXISTS
 
 -- 94. Devuelve los nombres de los fabricantes que tienen productos asociados. 
 -- (Utilizando EXISTS o NOT EXISTS).
 
+SELECT nombre FROM fabricantes
+WHERE EXISTS
+(
+    SELECT 'Marcos calla' FROM productos
+    WHERE productos.id_fabricante = fabricantes.id
+);
+
 
 -- 95. Devuelve los nombres de los fabricantes que no tienen productos 
 -- asociados. (Utilizando EXISTS o NOT EXISTS).
 
+SELECT nombre FROM fabricantes
+WHERE NOT EXISTS
+(
+    SELECT 1 FROM productos
+    WHERE productos.id_fabricante = fabricantes.id
+);
 
 -- Subconsultas correlacionadas
 
@@ -464,9 +783,4 @@ INSERT INTO productos VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 
 -- 99. Devuelve un listado con todos los nombres de los fabricantes que tienen 
 -- el mismo número de productos que el fabricante Lenovo.
-
-
--- Creación y manipulación de tablas, modificación de datos, creación de vistas
-
--- 100. (Pronto...)
 
