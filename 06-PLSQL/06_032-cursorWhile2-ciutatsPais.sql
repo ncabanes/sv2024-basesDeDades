@@ -32,6 +32,11 @@ BEGIN
     END LOOP;
     CLOSE cursorCiutats;
     
+    v_resposta := RTRIM(v_resposta, ',');
+    IF v_resposta  IS NULL THEN
+        v_resposta := '(No trobat)';
+    END IF;
+
     DBMS_OUTPUT.PUT_LINE(v_resposta);
 END;
 
@@ -55,6 +60,11 @@ BEGIN
         FETCH cursorCiutats INTO v_ciutat;
     END LOOP;
     CLOSE cursorCiutats;
+
+    v_resposta := RTRIM(v_resposta, ',');
+    IF v_resposta  IS NULL THEN
+        v_resposta := '(No trobat)';
+    END IF;
     
     RETURN v_resposta;
 END CiutatsPais;
